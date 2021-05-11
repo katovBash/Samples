@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBAD25A8264AA8130016955D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25A7264AA8130016955D /* AppDelegate.swift */; };
+		CBAD25AA264AA8130016955D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25A9264AA8130016955D /* SceneDelegate.swift */; };
+		CBAD25AC264AA8130016955D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25AB264AA8130016955D /* ViewController.swift */; };
+		CBAD25AF264AA8130016955D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25AD264AA8130016955D /* Main.storyboard */; };
+		CBAD25B2264AA8130016955D /* CinemaMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */; };
+		CBAD25B4264AA8140016955D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25B3264AA8140016955D /* Assets.xcassets */; };
+		CBAD25B7264AA8140016955D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */; };
+		CBAD25C2264AA8140016955D /* CinemaMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25C1264AA8140016955D /* CinemaMVVMTests.swift */; };
+		CBAD25CD264AA8140016955D /* CinemaMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */; };
+		CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DA264AA89F0016955D /* CinemaModel.swift */; };
+		CBAD25DD264AA8AC0016955D /* CinemaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DC264AA8AC0016955D /* CinemaRequest.swift */; };
+		CBAD25DF264AA8C60016955D /* CinemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DE264AA8C60016955D /* CinemaTableViewController.swift */; };
+		CBAD25E1264AA8DC0016955D /* CinemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25E0264AA8DC0016955D /* CinemaTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBAD25BE264AA8140016955D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAD259C264AA8130016955D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAD25A3264AA8130016955D;
+			remoteInfo = CinemaMVVM;
+		};
+		CBAD25C9264AA8140016955D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAD259C264AA8130016955D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAD25A3264AA8130016955D;
+			remoteInfo = CinemaMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBAD25A4264AA8130016955D /* CinemaMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAD25A7264AA8130016955D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBAD25A9264AA8130016955D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBAD25AB264AA8130016955D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBAD25AE264AA8130016955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBAD25B1264AA8130016955D /* CinemaMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CinemaMVVM.xcdatamodel; sourceTree = "<group>"; };
+		CBAD25B3264AA8140016955D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBAD25B6264AA8140016955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBAD25B8264AA8140016955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAD25BD264AA8140016955D /* CinemaMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAD25C1264AA8140016955D /* CinemaMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaMVVMTests.swift; sourceTree = "<group>"; };
+		CBAD25C3264AA8140016955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAD25C8264AA8140016955D /* CinemaMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaMVVMUITests.swift; sourceTree = "<group>"; };
+		CBAD25CE264AA8140016955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAD25DA264AA89F0016955D /* CinemaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaModel.swift; sourceTree = "<group>"; };
+		CBAD25DC264AA8AC0016955D /* CinemaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaRequest.swift; sourceTree = "<group>"; };
+		CBAD25DE264AA8C60016955D /* CinemaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTableViewController.swift; sourceTree = "<group>"; };
+		CBAD25E0264AA8DC0016955D /* CinemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBAD25A1264AA8130016955D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAD25BA264AA8140016955D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAD25C5264AA8140016955D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBAD259B264AA8130016955D = {
+			isa = PBXGroup;
+			children = (
+				CBAD25A6264AA8130016955D /* CinemaMVVM */,
+				CBAD25C0264AA8140016955D /* CinemaMVVMTests */,
+				CBAD25CB264AA8140016955D /* CinemaMVVMUITests */,
+				CBAD25A5264AA8130016955D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBAD25A5264AA8130016955D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25A4264AA8130016955D /* CinemaMVVM.app */,
+				CBAD25BD264AA8140016955D /* CinemaMVVMTests.xctest */,
+				CBAD25C8264AA8140016955D /* CinemaMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBAD25A6264AA8130016955D /* CinemaMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25A7264AA8130016955D /* AppDelegate.swift */,
+				CBAD25A9264AA8130016955D /* SceneDelegate.swift */,
+				CBAD25DA264AA89F0016955D /* CinemaModel.swift */,
+				CBAD25DC264AA8AC0016955D /* CinemaRequest.swift */,
+				CBAD25DE264AA8C60016955D /* CinemaTableViewController.swift */,
+				CBAD25E0264AA8DC0016955D /* CinemaTableViewCell.swift */,
+				CBAD25AB264AA8130016955D /* ViewController.swift */,
+				CBAD25AD264AA8130016955D /* Main.storyboard */,
+				CBAD25B3264AA8140016955D /* Assets.xcassets */,
+				CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */,
+				CBAD25B8264AA8140016955D /* Info.plist */,
+				CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */,
+			);
+			path = CinemaMVVM;
+			sourceTree = "<group>";
+		};
+		CBAD25C0264AA8140016955D /* CinemaMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25C1264AA8140016955D /* CinemaMVVMTests.swift */,
+				CBAD25C3264AA8140016955D /* Info.plist */,
+			);
+			path = CinemaMVVMTests;
+			sourceTree = "<group>";
+		};
+		CBAD25CB264AA8140016955D /* CinemaMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */,
+				CBAD25CE264AA8140016955D /* Info.plist */,
+			);
+			path = CinemaMVVMUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBAD25A3264AA8130016955D /* CinemaMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAD25D1264AA8140016955D /* Build configuration list for PBXNativeTarget "CinemaMVVM" */;
+			buildPhases = (
+				CBAD25A0264AA8130016955D /* Sources */,
+				CBAD25A1264AA8130016955D /* Frameworks */,
+				CBAD25A2264AA8130016955D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CinemaMVVM;
+			productName = CinemaMVVM;
+			productReference = CBAD25A4264AA8130016955D /* CinemaMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBAD25BC264AA8140016955D /* CinemaMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAD25D4264AA8140016955D /* Build configuration list for PBXNativeTarget "CinemaMVVMTests" */;
+			buildPhases = (
+				CBAD25B9264AA8140016955D /* Sources */,
+				CBAD25BA264AA8140016955D /* Frameworks */,
+				CBAD25BB264AA8140016955D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAD25BF264AA8140016955D /* PBXTargetDependency */,
+			);
+			name = CinemaMVVMTests;
+			productName = CinemaMVVMTests;
+			productReference = CBAD25BD264AA8140016955D /* CinemaMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBAD25C7264AA8140016955D /* CinemaMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAD25D7264AA8140016955D /* Build configuration list for PBXNativeTarget "CinemaMVVMUITests" */;
+			buildPhases = (
+				CBAD25C4264AA8140016955D /* Sources */,
+				CBAD25C5264AA8140016955D /* Frameworks */,
+				CBAD25C6264AA8140016955D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAD25CA264AA8140016955D /* PBXTargetDependency */,
+			);
+			name = CinemaMVVMUITests;
+			productName = CinemaMVVMUITests;
+			productReference = CBAD25C8264AA8140016955D /* CinemaMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBAD259C264AA8130016955D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CBAD25A3264AA8130016955D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CBAD25BC264AA8140016955D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CBAD25A3264AA8130016955D;
+					};
+					CBAD25C7264AA8140016955D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CBAD25A3264AA8130016955D;
+					};
+				};
+			};
+			buildConfigurationList = CBAD259F264AA8130016955D /* Build configuration list for PBXProject "CinemaMVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBAD259B264AA8130016955D;
+			productRefGroup = CBAD25A5264AA8130016955D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBAD25A3264AA8130016955D /* CinemaMVVM */,
+				CBAD25BC264AA8140016955D /* CinemaMVVMTests */,
+				CBAD25C7264AA8140016955D /* CinemaMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBAD25A2264AA8130016955D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAD25B7264AA8140016955D /* LaunchScreen.storyboard in Resources */,
+				CBAD25B4264AA8140016955D /* Assets.xcassets in Resources */,
+				CBAD25AF264AA8130016955D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAD25BB264AA8140016955D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAD25C6264AA8140016955D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBAD25A0264AA8130016955D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAD25AC264AA8130016955D /* ViewController.swift in Sources */,
+				CBAD25A8264AA8130016955D /* AppDelegate.swift in Sources */,
+				CBAD25B2264AA8130016955D /* CinemaMVVM.xcdatamodeld in Sources */,
+				CBAD25AA264AA8130016955D /* SceneDelegate.swift in Sources */,
+				CBAD25E1264AA8DC0016955D /* CinemaTableViewCell.swift in Sources */,
+				CBAD25DD264AA8AC0016955D /* CinemaRequest.swift in Sources */,
+				CBAD25DF264AA8C60016955D /* CinemaTableViewController.swift in Sources */,
+				CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAD25B9264AA8140016955D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAD25C2264AA8140016955D /* CinemaMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAD25C4264AA8140016955D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAD25CD264AA8140016955D /* CinemaMVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBAD25BF264AA8140016955D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAD25A3264AA8130016955D /* CinemaMVVM */;
+			targetProxy = CBAD25BE264AA8140016955D /* PBXContainerItemProxy */;
+		};
+		CBAD25CA264AA8140016955D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAD25A3264AA8130016955D /* CinemaMVVM */;
+			targetProxy = CBAD25C9264AA8140016955D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBAD25AD264AA8130016955D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAD25AE264AA8130016955D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAD25B6264AA8140016955D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBAD25CF264AA8140016955D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBAD25D0264AA8140016955D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBAD25D2264AA8140016955D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8J5ZLD8A2;
+				INFOPLIST_FILE = CinemaMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bne.CinemaMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBAD25D3264AA8140016955D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8J5ZLD8A2;
+				INFOPLIST_FILE = CinemaMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bne.CinemaMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBAD25D5264AA8140016955D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8J5ZLD8A2;
+				INFOPLIST_FILE = CinemaMVVMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bne.CinemaMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemaMVVM.app/CinemaMVVM";
+			};
+			name = Debug;
+		};
+		CBAD25D6264AA8140016955D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8J5ZLD8A2;
+				INFOPLIST_FILE = CinemaMVVMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bne.CinemaMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemaMVVM.app/CinemaMVVM";
+			};
+			name = Release;
+		};
+		CBAD25D8264AA8140016955D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8J5ZLD8A2;
+				INFOPLIST_FILE = CinemaMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bne.CinemaMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CinemaMVVM;
+			};
+			name = Debug;
+		};
+		CBAD25D9264AA8140016955D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8J5ZLD8A2;
+				INFOPLIST_FILE = CinemaMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bne.CinemaMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CinemaMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBAD259F264AA8130016955D /* Build configuration list for PBXProject "CinemaMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAD25CF264AA8140016955D /* Debug */,
+				CBAD25D0264AA8140016955D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAD25D1264AA8140016955D /* Build configuration list for PBXNativeTarget "CinemaMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAD25D2264AA8140016955D /* Debug */,
+				CBAD25D3264AA8140016955D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAD25D4264AA8140016955D /* Build configuration list for PBXNativeTarget "CinemaMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAD25D5264AA8140016955D /* Debug */,
+				CBAD25D6264AA8140016955D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAD25D7264AA8140016955D /* Build configuration list for PBXNativeTarget "CinemaMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAD25D8264AA8140016955D /* Debug */,
+				CBAD25D9264AA8140016955D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CBAD25B1264AA8130016955D /* CinemaMVVM.xcdatamodel */,
+			);
+			currentVersion = CBAD25B1264AA8130016955D /* CinemaMVVM.xcdatamodel */;
+			path = CinemaMVVM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CBAD259C264AA8130016955D /* Project object */;
+}
