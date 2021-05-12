@@ -22,6 +22,33 @@ class CinemaMVVMUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testUI() {
+       let app = XCUIApplication()
+       app.launch()
+       
+       app.tables.cells.staticTexts["Mortal Kombat"].tap()
+       app.navigationBars["Mortal Kombat"].buttons["CinemaMVVM"].tap()
+
+       app.tables.staticTexts["Godzilla vs. Kong"].tap()
+       app.navigationBars["Godzilla vs. Kong"].buttons["CinemaMVVM"].tap()
+
+       app.tables.staticTexts["Nobody"].tap()
+       app.navigationBars["Nobody"].buttons["CinemaMVVM"].tap()
+
+       app.tables.staticTexts["Vanquish"].tap()
+       app.navigationBars["Vanquish"].buttons["CinemaMVVM"].tap()
+
+       app.tables.staticTexts["The Unholy"].tap()
+       app.navigationBars["The Unholy"].buttons["CinemaMVVM"].tap()
+
+       app.tables.staticTexts["Thunder Force"].tap()
+       app.navigationBars["Thunder Force"].buttons["CinemaMVVM"].tap()
+
+       app.tables.staticTexts["Sentinelle"].tap()
+       app.navigationBars["Sentinelle"].buttons["CinemaMVVM"].tap()
+       app.accessibilityPerformMagicTap()
+   }
+    
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()

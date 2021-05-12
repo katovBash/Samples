@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB754557264AFCEA00971459 /* Extension + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754556264AFCEA00971459 /* Extension + Alert.swift */; };
 		CBAD25A8264AA8130016955D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25A7264AA8130016955D /* AppDelegate.swift */; };
 		CBAD25AA264AA8130016955D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25A9264AA8130016955D /* SceneDelegate.swift */; };
-		CBAD25AC264AA8130016955D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25AB264AA8130016955D /* ViewController.swift */; };
 		CBAD25AF264AA8130016955D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25AD264AA8130016955D /* Main.storyboard */; };
 		CBAD25B2264AA8130016955D /* CinemaMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */; };
 		CBAD25B4264AA8140016955D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25B3264AA8140016955D /* Assets.xcassets */; };
@@ -17,9 +17,25 @@
 		CBAD25C2264AA8140016955D /* CinemaMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25C1264AA8140016955D /* CinemaMVVMTests.swift */; };
 		CBAD25CD264AA8140016955D /* CinemaMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */; };
 		CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DA264AA89F0016955D /* CinemaModel.swift */; };
-		CBAD25DD264AA8AC0016955D /* CinemaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DC264AA8AC0016955D /* CinemaRequest.swift */; };
-		CBAD25DF264AA8C60016955D /* CinemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DE264AA8C60016955D /* CinemaTableViewController.swift */; };
-		CBAD25E1264AA8DC0016955D /* CinemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25E0264AA8DC0016955D /* CinemaTableViewCell.swift */; };
+		CBAD25E7264AAA930016955D /* MainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25E5264AAA930016955D /* MainTableVC.swift */; };
+		CBAD25E8264AAA930016955D /* MainTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25E6264AAA930016955D /* MainTableVC.xib */; };
+		CBAD25ED264AAAF80016955D /* MainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25EB264AAAF80016955D /* MainTableCell.swift */; };
+		CBAD25EE264AAAF80016955D /* MainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25EC264AAAF80016955D /* MainTableCell.xib */; };
+		CBAD25F4264AAB8E0016955D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25F3264AAB8E0016955D /* MainViewModel.swift */; };
+		CBAD25F7264AAC050016955D /* CinemaImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25F6264AAC050016955D /* CinemaImageModel.swift */; };
+		CBAD25FE264AAC5E0016955D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25FC264AAC5E0016955D /* DetailViewController.swift */; };
+		CBAD2602264AAC8C0016955D /* DetailCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2600264AAC8C0016955D /* DetailCollectionCell.swift */; };
+		CBAD2603264AAC8C0016955D /* DetailCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAD2601264AAC8C0016955D /* DetailCollectionCell.xib */; };
+		CBAD2606264AACDF0016955D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2605264AACDF0016955D /* DetailViewModel.swift */; };
+		CBAD260C264AAD440016955D /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD260B264AAD440016955D /* PhotoService.swift */; };
+		CBAD260E264AAD5E0016955D /* DataReloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD260D264AAD5E0016955D /* DataReloadable.swift */; };
+		CBAD2612264AAD960016955D /* InternetDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2611264AAD960016955D /* InternetDataHelper.swift */; };
+		CBAD2617264AAE4E0016955D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2616264AAE4E0016955D /* NetworkService.swift */; };
+		CBAD2619264AAEB70016955D /* ErrorNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2618264AAEB70016955D /* ErrorNetworkService.swift */; };
+		CBAD261E264ABFCE0016955D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD261D264ABFCE0016955D /* Coordinator.swift */; };
+		CBAD2629264AD3F90016955D /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */; };
+		CBD35888264C3E39007C9F96 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD35887264C3E39007C9F96 /* DetailViewController.xib */; };
+		CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB754556264AFCEA00971459 /* Extension + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Alert.swift"; sourceTree = "<group>"; };
 		CBAD25A4264AA8130016955D /* CinemaMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAD25A7264AA8130016955D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAD25A9264AA8130016955D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBAD25AB264AA8130016955D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBAD25AE264AA8130016955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBAD25B1264AA8130016955D /* CinemaMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CinemaMVVM.xcdatamodel; sourceTree = "<group>"; };
 		CBAD25B3264AA8140016955D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,9 +72,25 @@
 		CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaMVVMUITests.swift; sourceTree = "<group>"; };
 		CBAD25CE264AA8140016955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAD25DA264AA89F0016955D /* CinemaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaModel.swift; sourceTree = "<group>"; };
-		CBAD25DC264AA8AC0016955D /* CinemaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaRequest.swift; sourceTree = "<group>"; };
-		CBAD25DE264AA8C60016955D /* CinemaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTableViewController.swift; sourceTree = "<group>"; };
-		CBAD25E0264AA8DC0016955D /* CinemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTableViewCell.swift; sourceTree = "<group>"; };
+		CBAD25E5264AAA930016955D /* MainTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableVC.swift; sourceTree = "<group>"; };
+		CBAD25E6264AAA930016955D /* MainTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableVC.xib; sourceTree = "<group>"; };
+		CBAD25EB264AAAF80016955D /* MainTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCell.swift; sourceTree = "<group>"; };
+		CBAD25EC264AAAF80016955D /* MainTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableCell.xib; sourceTree = "<group>"; };
+		CBAD25F3264AAB8E0016955D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CBAD25F6264AAC050016955D /* CinemaImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaImageModel.swift; sourceTree = "<group>"; };
+		CBAD25FC264AAC5E0016955D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CBAD2600264AAC8C0016955D /* DetailCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionCell.swift; sourceTree = "<group>"; };
+		CBAD2601264AAC8C0016955D /* DetailCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCollectionCell.xib; sourceTree = "<group>"; };
+		CBAD2605264AACDF0016955D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CBAD260B264AAD440016955D /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		CBAD260D264AAD5E0016955D /* DataReloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReloadable.swift; sourceTree = "<group>"; };
+		CBAD2611264AAD960016955D /* InternetDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDataHelper.swift; sourceTree = "<group>"; };
+		CBAD2616264AAE4E0016955D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CBAD2618264AAEB70016955D /* ErrorNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetworkService.swift; sourceTree = "<group>"; };
+		CBAD261D264ABFCE0016955D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		CBD35887264C3E39007C9F96 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB754558264B0AB600971459 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB754556264AFCEA00971459 /* Extension + Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CBAD259B264AA8130016955D = {
 			isa = PBXGroup;
 			children = (
@@ -109,18 +149,13 @@
 		CBAD25A6264AA8130016955D /* CinemaMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD25A7264AA8130016955D /* AppDelegate.swift */,
-				CBAD25A9264AA8130016955D /* SceneDelegate.swift */,
-				CBAD25DA264AA89F0016955D /* CinemaModel.swift */,
-				CBAD25DC264AA8AC0016955D /* CinemaRequest.swift */,
-				CBAD25DE264AA8C60016955D /* CinemaTableViewController.swift */,
-				CBAD25E0264AA8DC0016955D /* CinemaTableViewCell.swift */,
-				CBAD25AB264AA8130016955D /* ViewController.swift */,
-				CBAD25AD264AA8130016955D /* Main.storyboard */,
-				CBAD25B3264AA8140016955D /* Assets.xcassets */,
-				CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */,
 				CBAD25B8264AA8140016955D /* Info.plist */,
-				CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */,
+				CBAD2608264AAD0B0016955D /* App */,
+				CBAD2627264AD3E20016955D /* AssemblyBuilder */,
+				CBAD261C264ABF670016955D /* Coordinator */,
+				CBAD2607264AAD000016955D /* Presentation */,
+				CBAD2613264AADBB0016955D /* ServiceView */,
+				CBAD2609264AAD1C0016955D /* ServiceLayer */,
 			);
 			path = CinemaMVVM;
 			sourceTree = "<group>";
@@ -141,6 +176,211 @@
 				CBAD25CE264AA8140016955D /* Info.plist */,
 			);
 			path = CinemaMVVMUITests;
+			sourceTree = "<group>";
+		};
+		CBAD25E9264AAABB0016955D /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25F2264AAB730016955D /* ViewModel */,
+				CBAD25F1264AAB530016955D /* Model */,
+				CBAD25F0264AAB430016955D /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		CBAD25EA264AAAD80016955D /* TableVC */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25E5264AAA930016955D /* MainTableVC.swift */,
+				CBAD25E6264AAA930016955D /* MainTableVC.xib */,
+			);
+			path = TableVC;
+			sourceTree = "<group>";
+		};
+		CBAD25EF264AAAFD0016955D /* CellVC */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25EB264AAAF80016955D /* MainTableCell.swift */,
+				CBAD25EC264AAAF80016955D /* MainTableCell.xib */,
+			);
+			path = CellVC;
+			sourceTree = "<group>";
+		};
+		CBAD25F0264AAB430016955D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25EA264AAAD80016955D /* TableVC */,
+				CBAD25EF264AAAFD0016955D /* CellVC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBAD25F1264AAB530016955D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25DA264AA89F0016955D /* CinemaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBAD25F2264AAB730016955D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25F3264AAB8E0016955D /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBAD25F5264AABDC0016955D /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD2604264AACC40016955D /* ViewModel */,
+				CBAD25F9264AAC210016955D /* View */,
+				CBAD25F8264AAC0E0016955D /* Model */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		CBAD25F8264AAC0E0016955D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25F6264AAC050016955D /* CinemaImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBAD25F9264AAC210016955D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25FA264AAC2D0016955D /* DetailVC */,
+				CBAD25FB264AAC3B0016955D /* DetailCollectionCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBAD25FA264AAC2D0016955D /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25FC264AAC5E0016955D /* DetailViewController.swift */,
+				CBD35887264C3E39007C9F96 /* DetailViewController.xib */,
+			);
+			path = DetailVC;
+			sourceTree = "<group>";
+		};
+		CBAD25FB264AAC3B0016955D /* DetailCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD2600264AAC8C0016955D /* DetailCollectionCell.swift */,
+				CBAD2601264AAC8C0016955D /* DetailCollectionCell.xib */,
+			);
+			path = DetailCollectionCell;
+			sourceTree = "<group>";
+		};
+		CBAD2604264AACC40016955D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD2605264AACDF0016955D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBAD2607264AAD000016955D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25E9264AAABB0016955D /* MainModule */,
+				CBAD25F5264AABDC0016955D /* DetailModule */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CBAD2608264AAD0B0016955D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25A7264AA8130016955D /* AppDelegate.swift */,
+				CBAD25A9264AA8130016955D /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CBAD2609264AAD1C0016955D /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD2615264AAE000016955D /* CoreData */,
+				CBAD2614264AADEB0016955D /* Network */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		CBAD260A264AAD2C0016955D /* ServicePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD260B264AAD440016955D /* PhotoService.swift */,
+				CBAD260D264AAD5E0016955D /* DataReloadable.swift */,
+			);
+			path = ServicePhoto;
+			sourceTree = "<group>";
+		};
+		CBAD260F264AAD700016955D /* ServiceNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD2616264AAE4E0016955D /* NetworkService.swift */,
+				CBAD2618264AAEB70016955D /* ErrorNetworkService.swift */,
+			);
+			path = ServiceNetwork;
+			sourceTree = "<group>";
+		};
+		CBAD2610264AAD7F0016955D /* HelperData */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD2611264AAD960016955D /* InternetDataHelper.swift */,
+			);
+			path = HelperData;
+			sourceTree = "<group>";
+		};
+		CBAD2613264AADBB0016955D /* ServiceView */ = {
+			isa = PBXGroup;
+			children = (
+				CB754558264B0AB600971459 /* Extensions */,
+				CBAD25AD264AA8130016955D /* Main.storyboard */,
+				CBAD25B3264AA8140016955D /* Assets.xcassets */,
+				CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */,
+			);
+			path = ServiceView;
+			sourceTree = "<group>";
+		};
+		CBAD2614264AADEB0016955D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD260A264AAD2C0016955D /* ServicePhoto */,
+				CBAD260F264AAD700016955D /* ServiceNetwork */,
+				CBAD2610264AAD7F0016955D /* HelperData */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CBAD2615264AAE000016955D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */,
+				CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CBAD261C264ABF670016955D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD261D264ABFCE0016955D /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CBAD2627264AD3E20016955D /* AssemblyBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */,
+			);
+			path = AssemblyBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +487,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAD25B7264AA8140016955D /* LaunchScreen.storyboard in Resources */,
+				CBAD2603264AAC8C0016955D /* DetailCollectionCell.xib in Resources */,
+				CBD35888264C3E39007C9F96 /* DetailViewController.xib in Resources */,
 				CBAD25B4264AA8140016955D /* Assets.xcassets in Resources */,
+				CBAD25E8264AAA930016955D /* MainTableVC.xib in Resources */,
 				CBAD25AF264AA8130016955D /* Main.storyboard in Resources */,
+				CBAD25EE264AAAF80016955D /* MainTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,14 +517,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAD25AC264AA8130016955D /* ViewController.swift in Sources */,
+				CBAD25FE264AAC5E0016955D /* DetailViewController.swift in Sources */,
+				CBAD260E264AAD5E0016955D /* DataReloadable.swift in Sources */,
 				CBAD25A8264AA8130016955D /* AppDelegate.swift in Sources */,
+				CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */,
+				CBAD2629264AD3F90016955D /* AssemblyBuilder.swift in Sources */,
 				CBAD25B2264AA8130016955D /* CinemaMVVM.xcdatamodeld in Sources */,
+				CB754557264AFCEA00971459 /* Extension + Alert.swift in Sources */,
+				CBAD2602264AAC8C0016955D /* DetailCollectionCell.swift in Sources */,
+				CBAD25F7264AAC050016955D /* CinemaImageModel.swift in Sources */,
+				CBAD25ED264AAAF80016955D /* MainTableCell.swift in Sources */,
+				CBAD261E264ABFCE0016955D /* Coordinator.swift in Sources */,
 				CBAD25AA264AA8130016955D /* SceneDelegate.swift in Sources */,
-				CBAD25E1264AA8DC0016955D /* CinemaTableViewCell.swift in Sources */,
-				CBAD25DD264AA8AC0016955D /* CinemaRequest.swift in Sources */,
-				CBAD25DF264AA8C60016955D /* CinemaTableViewController.swift in Sources */,
 				CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */,
+				CBAD2619264AAEB70016955D /* ErrorNetworkService.swift in Sources */,
+				CBAD260C264AAD440016955D /* PhotoService.swift in Sources */,
+				CBAD2617264AAE4E0016955D /* NetworkService.swift in Sources */,
+				CBAD25E7264AAA930016955D /* MainTableVC.swift in Sources */,
+				CBAD2606264AACDF0016955D /* DetailViewModel.swift in Sources */,
+				CBAD2612264AAD960016955D /* InternetDataHelper.swift in Sources */,
+				CBAD25F4264AAB8E0016955D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
