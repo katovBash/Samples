@@ -9,6 +9,7 @@ import Foundation
 final class CinemaListModel: Decodable {
     var results: [CinemaModel]?
 }
+
 /// MovieModel
 class CinemaModel: Decodable {
     var posterPath: String?
@@ -16,7 +17,7 @@ class CinemaModel: Decodable {
     var overview: String?
     var voteAverage: Double?
     var id: Int?
-    
+
     enum CodingKeys: String, CodingKey {
         case title = "original_title"
         case posterPath = "poster_path"
@@ -24,11 +25,15 @@ class CinemaModel: Decodable {
         case id
         case overview
     }
-    
-    init(posterPath: String, originalTitle: String,
-         overview: String, voteAverage: Double) {
+
+    init(
+        posterPath: String,
+        originalTitle: String,
+        overview: String,
+        voteAverage: Double
+    ) {
         self.posterPath = posterPath
-        self.title = originalTitle
+        title = originalTitle
         self.overview = overview
         self.voteAverage = voteAverage
     }

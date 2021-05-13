@@ -5,14 +5,13 @@
 //  Created by Nick Bashkatov on 13.05.2021.
 //
 
-import XCTest
 @testable import CinemaMVVM
+import XCTest
 
-class MainModuleTest: XCTestCase {
-
+final class MainModuleTest: XCTestCase {
     var viewModelProtocol: MainViewModelProtocol?
     var viewModel = MainViewModel()
-    
+
     func testMainViewModel() {
         viewModelProtocol?.getCinema()
         XCTAssert(viewModelProtocol?.getCinema() == nil)

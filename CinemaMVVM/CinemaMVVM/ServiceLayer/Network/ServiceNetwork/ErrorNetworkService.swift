@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import Foundation
 
+/// Enum for decoding errors
 enum ErrorService: Error {
     case noDataAvailable
     case noProcessData

@@ -5,7 +5,6 @@
 //  Created by Nick Bashkatov on 11.05.2021.
 //
 
-
 import Foundation
 import UIKit
 
@@ -20,26 +19,29 @@ final class PhotoService {
 
     private static let pathName: String = {
         let pathName = "images"
-        
+
         guard let cacheDir = FileManager.default.urls(
             for: FileManager.SearchPathDirectory.cachesDirectory,
-            in: .userDomainMask).first else { return pathName }
-        
+            in: .userDomainMask
+        ).first else { return pathName }
+
         let url = cacheDir.appendingPathComponent(pathName, isDirectory: true)
-        
+
         if !FileManager.default.fileExists(atPath: url.path) {
-            try? FileManager.default.createDirectory(at: url,
-                                                     withIntermediateDirectories: true,
-                                                     attributes: nil)
+            try? FileManager.default.createDirectory(
+                at: url,
+                withIntermediateDirectories: true,
+                attributes: nil
+            )
         }
         return pathName
     }()
 
     private func getFilePath(urlString: String) -> String? {
-        
         guard let cacheDir = FileManager.default.urls(
             for: .cachesDirectory,
-            in: .userDomainMask ).first else { return nil }
+            in: .userDomainMask
+        ).first else { return nil }
 
         let hashName = String(describing: urlString.hashValue)
 
@@ -50,13 +52,14 @@ final class PhotoService {
         guard let filename = getFilePath(urlString: urlString) else { return }
 
         let data = image.pngData()
-        FileManager.default.createFile(atPath: filename,
-                                       contents: data,
-                                       attributes: nil)
+        FileManager.default.createFile(
+            atPath: filename,
+            contents: data,
+            attributes: nil
+        )
     }
 
     private func getImageFromCache(urlString: String) -> UIImage? {
-        
         guard let filename = getFilePath(urlString: urlString),
               let info = try? FileManager.default.attributesOfItem(atPath: filename),
               let modificationDate = info[FileAttributeKey.modificationDate] as? Date else { return nil }
@@ -71,17 +74,16 @@ final class PhotoService {
     }
 
     private func loadPhoto(at indexPath: IndexPath, by urlString: String) {
-        
         guard let resourceURL = URL(string: urlString) else { return }
-        
-        URLSession.shared.dataTask(with: resourceURL) { data, _, error in
-            
+
+        URLSession.shared.dataTask(with: resourceURL) { data, _, _ in
+
             let dispatchGroup = DispatchGroup()
             dispatchGroup.enter()
-            
+
             guard let data = data else { return }
-            guard let image = UIImage(data: data) else {return}
-            
+            guard let image = UIImage(data: data) else { return }
+
             DispatchQueue.global().async {
                 self.images[urlString] = image
                 self.saveImageToCache(urlString: urlString, image: image)
@@ -94,7 +96,7 @@ final class PhotoService {
         }.resume()
     }
 
-func savePhotoToFileManager(at indexPath: IndexPath, by urlString: String) -> UIImage? {
+    func savePhotoToFileManager(at indexPath: IndexPath, by urlString: String) -> UIImage? {
         if let photo = images[urlString] {
             return photo
         } else if let photo = getImageFromCache(urlString: urlString) {
@@ -105,5 +107,3 @@ func savePhotoToFileManager(at indexPath: IndexPath, by urlString: String) -> UI
         return nil
     }
 }
-
-

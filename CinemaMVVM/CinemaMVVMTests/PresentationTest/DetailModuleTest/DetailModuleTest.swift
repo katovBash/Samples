@@ -5,11 +5,10 @@
 //  Created by Nick Bashkatov on 13.05.2021.
 //
 
-import XCTest
 @testable import CinemaMVVM
+import XCTest
 
-class DetailModuleTest: XCTestCase {
-
+final class DetailModuleTest: XCTestCase {
     var detailProtocol: DetailViewModelProtocol?
 
     func testDetailModel() {

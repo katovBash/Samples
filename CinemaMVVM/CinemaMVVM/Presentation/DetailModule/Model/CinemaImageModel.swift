@@ -13,11 +13,9 @@ final class CinemaListImageModel: Decodable {
 }
 
 final class CinemaImageModel: Decodable {
-    
     enum CodingKeys: String, CodingKey {
         case filePath = "file_path"
     }
-    
+
     var filePath: String?
 }
-

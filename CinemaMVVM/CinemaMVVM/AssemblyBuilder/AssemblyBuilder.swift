@@ -13,7 +13,8 @@ protocol AssemblyBuilderProtocol {
     func createDetailModule(cinema: CinemaModel, coordinator: CoordinatorProtocol) -> UIViewController
 }
 
-//MARK: Initialise elements in project
+// MARK: Initialise elements in project
+
 final class AssemblyBuilder: AssemblyBuilderProtocol {
     func createMainModule(coordinator: CoordinatorProtocol) -> UITableViewController {
         let view = MainTableVC()
@@ -21,7 +22,7 @@ final class AssemblyBuilder: AssemblyBuilderProtocol {
         view.viewModel = mainViewModel
         return view
     }
-    
+
     func createDetailModule(cinema: CinemaModel, coordinator: CoordinatorProtocol) -> UIViewController {
         let view = DetailViewController()
         let detailViewModel = DetailViewModel()

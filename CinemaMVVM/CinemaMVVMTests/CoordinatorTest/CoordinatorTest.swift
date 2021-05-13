@@ -5,14 +5,13 @@
 //  Created by Nick Bashkatov on 13.05.2021.
 //
 
-import XCTest
 @testable import CinemaMVVM
+import XCTest
 
-class CoordinatorTest: XCTestCase {
-
+final class CoordinatorTest: XCTestCase {
     var coordinator: CoordinatorProtocol?
     var cinemaModel: CinemaModel?
-    
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -24,10 +23,14 @@ class CoordinatorTest: XCTestCase {
     func testCoordinator() {
         cinemaModel = CinemaModel(posterPath: "Big", originalTitle: "Big", overview: "Big", voteAverage: 10)
         coordinator?.startMain()
-        coordinator?.startDetail(model: cinemaModel ?? CinemaModel(posterPath: "", originalTitle: "", overview: "", voteAverage: 0))
-        
+        coordinator?.startDetail(model: cinemaModel ?? CinemaModel(
+            posterPath: "",
+            originalTitle: "",
+            overview: "",
+            voteAverage: 0
+        ))
+
         XCTAssertTrue(cinemaModel != nil)
         XCTAssertFalse(coordinator?.startMain() != nil)
     }
 }
-
