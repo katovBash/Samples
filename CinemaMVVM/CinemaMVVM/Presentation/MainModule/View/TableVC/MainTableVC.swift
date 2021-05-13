@@ -19,14 +19,12 @@ final class MainTableVC: UITableViewController {
         
         photoService = PhotoService(container: tableView)
         viewModel = MainViewModel()
-        viewModel?.getCinema()
         
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        navigationController?.navigationBar.shadowImage = UIImage()
-//        navigationController?.navigationBar.isTranslucent = true
-        
+        navigationItem.title = "MVVMCinema"
+        navigationItem.backButtonTitle = "Back"
+
         tableView.register(MainTableCell.nib(), forCellReuseIdentifier: MainTableCell.idCell)
-        viewModel?.loadView()
+        viewModel?.getCinema()
         updateView()
     }
     
@@ -56,7 +54,6 @@ final class MainTableVC: UITableViewController {
     
     //MARK: Tapped to cell and switch to next view with correct film
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         guard let cinemaSelected = viewModel?.cinemaModelList?.results?[indexPath.row]  else {return}
         movieIDClosure?(cinemaSelected.id ?? Int())
         coordinator?.startDetail(model: cinemaSelected)

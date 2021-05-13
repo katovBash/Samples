@@ -1,21 +1,16 @@
 //
-//  AppDelegate.swift
-//  CinemaMVVM
+//  AppDelegateTest.swift
+//  CinemaMVVMTests
 //
-//  Created by Nick Bashkatov on 11.05.2021.
+//  Created by Nick Bashkatov on 13.05.2021.
 //
 
-import UIKit
+import XCTest
 import CoreData
+@testable import CinemaMVVM
 
-@main
-final class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        return true
-    }
-    
-    // MARK: - Core Data stack
+class AppDelegateTest: XCTestCase {
+
     lazy var persistentContainer: NSPersistentContainer = {
         
         let container = NSPersistentContainer(name: "CinemaMVVM")
@@ -28,7 +23,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
     
     // MARK: - Core Data Saving support
-    func saveContext () {
+    func testSaveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
@@ -40,4 +35,3 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
-

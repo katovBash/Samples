@@ -27,10 +27,6 @@ final class DetailViewController: UIViewController {
         photoService = PhotoService(container: collectionView)
         detailViewModel = DetailViewModel()
         
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        navigationController?.navigationBar.shadowImage = UIImage()
-//        navigationController?.navigationBar.isTranslucent = true
-//        navigationItem.backBarButtonItem?.title = ""
         
         setUP()
         detailViewModel.getCinema(movieID: movieID ?? Int())

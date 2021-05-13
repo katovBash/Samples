@@ -9,7 +9,13 @@ import Foundation
 import CoreData
 import UIKit
 
-final class CoreDataProvider {
+protocol CoreDataProviderProtocol {
+    func deleteObjectsFromCoreData(context: NSManagedObjectContext)
+    func saveDateToCoreDate(movies: [CinemaModel], context: NSManagedObjectContext)
+    func getInfoCoreData(model: CinemaListModel)
+}
+
+final class CoreDataProvider: CoreDataProviderProtocol {
     
     static let shareInstance = CoreDataProvider()
     
@@ -17,11 +23,13 @@ final class CoreDataProvider {
     private let fetchRequest = NSFetchRequest<MovieCoreData>(entityName: "MovieCoreData")
     
     func saveData(movie: [CinemaModel]) {
-        self.container?.performBackgroundTask { [weak self] context in
+        self.container?.performBackgroundTask { context in
+            self.deleteObjectsFromCoreData(context: context)
+            self.saveDateToCoreDate(movies: movie, context: context)
         }
     }
     
-    private func deleteObjectsFromCoreData(context: NSManagedObjectContext) {
+    func deleteObjectsFromCoreData(context: NSManagedObjectContext) {
         do {
             let objects = try context.fetch(fetchRequest)
             _ = objects.map({ context.delete($0)})
@@ -31,7 +39,7 @@ final class CoreDataProvider {
         }
     }
     
-    private func saveDateToCoreDate(movies: [CinemaModel], context: NSManagedObjectContext) {
+    func saveDateToCoreDate(movies: [CinemaModel], context: NSManagedObjectContext) {
         context.perform {
             for movie in movies {
                 let movieEntity = MovieCoreData(context: context)
@@ -45,6 +53,24 @@ final class CoreDataProvider {
                 try context.save()
             } catch {
                 fatalError("\(error)")
+            }
+        }
+    }
+    
+    func getInfoCoreData(model: CinemaListModel) {
+        DispatchQueue.main.async {
+            if let context = self.container?.viewContext {
+                let request: NSFetchRequest<MovieCoreData> = MovieCoreData.fetchRequest()
+                request.sortDescriptors = [NSSortDescriptor(key: #keyPath(MovieCoreData.rate), ascending: false)]
+                let data = try? context.fetch(request)
+                let result = data?.compactMap { movie -> CinemaModel in
+                    let movieEntity = CinemaModel(posterPath: movie.posterImage ?? String(),
+                                                  originalTitle: movie.title ?? String(),
+                                                  overview: movie.overView ?? String(),
+                                                  voteAverage: movie.rate)
+                    return movieEntity
+                }
+                model.results = result ?? []
             }
         }
     }

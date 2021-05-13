@@ -14,7 +14,6 @@
 		CBAD25B2264AA8130016955D /* CinemaMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */; };
 		CBAD25B4264AA8140016955D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25B3264AA8140016955D /* Assets.xcassets */; };
 		CBAD25B7264AA8140016955D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */; };
-		CBAD25C2264AA8140016955D /* CinemaMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25C1264AA8140016955D /* CinemaMVVMTests.swift */; };
 		CBAD25CD264AA8140016955D /* CinemaMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */; };
 		CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DA264AA89F0016955D /* CinemaModel.swift */; };
 		CBAD25E7264AAA930016955D /* MainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25E5264AAA930016955D /* MainTableVC.swift */; };
@@ -36,6 +35,15 @@
 		CBAD2629264AD3F90016955D /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */; };
 		CBD35888264C3E39007C9F96 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD35887264C3E39007C9F96 /* DetailViewController.xib */; };
 		CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */; };
+		CBDF17B9264D8A6500E5786A /* CoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */; };
+		CBDF17BB264D8C9C00E5786A /* AssemblyBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17BA264D8C9C00E5786A /* AssemblyBuilderTest.swift */; };
+		CBDF17BD264D8F5500E5786A /* CoreDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17BC264D8F5500E5786A /* CoreDataTest.swift */; };
+		CBDF17CA264D962000E5786A /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17C9264D961F00E5786A /* NetworkServiceTest.swift */; };
+		CBDF17CC264D991900E5786A /* PhotoCacheTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17CB264D991900E5786A /* PhotoCacheTest.swift */; };
+		CBDF17CE264D995B00E5786A /* ReloadableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17CD264D995B00E5786A /* ReloadableTest.swift */; };
+		CBDF17D2264D9E6A00E5786A /* MainModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17D1264D9E6A00E5786A /* MainModuleTest.swift */; };
+		CBDF17D4264D9E7600E5786A /* DetailModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17D3264D9E7600E5786A /* DetailModuleTest.swift */; };
+		CBDF17D7264DA09F00E5786A /* AppDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17D6264DA09F00E5786A /* AppDelegateTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +74,6 @@
 		CBAD25B6264AA8140016955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBAD25B8264AA8140016955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAD25BD264AA8140016955D /* CinemaMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBAD25C1264AA8140016955D /* CinemaMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaMVVMTests.swift; sourceTree = "<group>"; };
 		CBAD25C3264AA8140016955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAD25C8264AA8140016955D /* CinemaMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaMVVMUITests.swift; sourceTree = "<group>"; };
@@ -91,6 +98,15 @@
 		CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
 		CBD35887264C3E39007C9F96 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTest.swift; sourceTree = "<group>"; };
+		CBDF17BA264D8C9C00E5786A /* AssemblyBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderTest.swift; sourceTree = "<group>"; };
+		CBDF17BC264D8F5500E5786A /* CoreDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTest.swift; sourceTree = "<group>"; };
+		CBDF17C9264D961F00E5786A /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		CBDF17CB264D991900E5786A /* PhotoCacheTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCacheTest.swift; sourceTree = "<group>"; };
+		CBDF17CD264D995B00E5786A /* ReloadableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadableTest.swift; sourceTree = "<group>"; };
+		CBDF17D1264D9E6A00E5786A /* MainModuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleTest.swift; sourceTree = "<group>"; };
+		CBDF17D3264D9E7600E5786A /* DetailModuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModuleTest.swift; sourceTree = "<group>"; };
+		CBDF17D6264DA09F00E5786A /* AppDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +170,6 @@
 				CBAD2627264AD3E20016955D /* AssemblyBuilder */,
 				CBAD261C264ABF670016955D /* Coordinator */,
 				CBAD2607264AAD000016955D /* Presentation */,
-				CBAD2613264AADBB0016955D /* ServiceView */,
 				CBAD2609264AAD1C0016955D /* ServiceLayer */,
 			);
 			path = CinemaMVVM;
@@ -163,8 +178,12 @@
 		CBAD25C0264AA8140016955D /* CinemaMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD25C1264AA8140016955D /* CinemaMVVMTests.swift */,
 				CBAD25C3264AA8140016955D /* Info.plist */,
+				CBDF17D5264DA08E00E5786A /* AppDelegateTest */,
+				CBDF17C8264D95DD00E5786A /* ServiceLayerTest */,
+				CBDF17C5264D956000E5786A /* PresentationTest */,
+				CBDF17C1264D948500E5786A /* AssemblyBuilderTest */,
+				CBDF17C0264D947C00E5786A /* CoordinatorTest */,
 			);
 			path = CinemaMVVMTests;
 			sourceTree = "<group>";
@@ -172,8 +191,8 @@
 		CBAD25CB264AA8140016955D /* CinemaMVVMUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */,
 				CBAD25CE264AA8140016955D /* Info.plist */,
+				CBDF17C3264D950000E5786A /* ViewTest */,
 			);
 			path = CinemaMVVMUITests;
 			sourceTree = "<group>";
@@ -305,8 +324,10 @@
 		CBAD2609264AAD1C0016955D /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD2615264AAE000016955D /* CoreData */,
 				CBAD2614264AADEB0016955D /* Network */,
+				CBAD2615264AAE000016955D /* CoreData */,
+				CBDF17BE264D8FC200E5786A /* PhotoCache */,
+				CBAD2613264AADBB0016955D /* ServiceView */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -351,7 +372,6 @@
 		CBAD2614264AADEB0016955D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD260A264AAD2C0016955D /* ServicePhoto */,
 				CBAD260F264AAD700016955D /* ServiceNetwork */,
 				CBAD2610264AAD7F0016955D /* HelperData */,
 			);
@@ -361,8 +381,8 @@
 		CBAD2615264AAE000016955D /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */,
 				CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */,
+				CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -381,6 +401,106 @@
 				CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */,
 			);
 			path = AssemblyBuilder;
+			sourceTree = "<group>";
+		};
+		CBDF17BE264D8FC200E5786A /* PhotoCache */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD260A264AAD2C0016955D /* ServicePhoto */,
+			);
+			path = PhotoCache;
+			sourceTree = "<group>";
+		};
+		CBDF17BF264D946B00E5786A /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17BC264D8F5500E5786A /* CoreDataTest.swift */,
+			);
+			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C0264D947C00E5786A /* CoordinatorTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */,
+			);
+			path = CoordinatorTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C1264D948500E5786A /* AssemblyBuilderTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17BA264D8C9C00E5786A /* AssemblyBuilderTest.swift */,
+			);
+			path = AssemblyBuilderTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C2264D94E800E5786A /* NetworkServiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17C9264D961F00E5786A /* NetworkServiceTest.swift */,
+			);
+			path = NetworkServiceTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C3264D950000E5786A /* ViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */,
+			);
+			path = ViewTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C4264D953400E5786A /* PhotoCacheTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17CB264D991900E5786A /* PhotoCacheTest.swift */,
+				CBDF17CD264D995B00E5786A /* ReloadableTest.swift */,
+			);
+			path = PhotoCacheTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C5264D956000E5786A /* PresentationTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17C7264D957000E5786A /* MainModuleTest */,
+				CBDF17C6264D956900E5786A /* DetailModuleTest */,
+			);
+			path = PresentationTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C6264D956900E5786A /* DetailModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17D3264D9E7600E5786A /* DetailModuleTest.swift */,
+			);
+			path = DetailModuleTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C7264D957000E5786A /* MainModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17D1264D9E6A00E5786A /* MainModuleTest.swift */,
+			);
+			path = MainModuleTest;
+			sourceTree = "<group>";
+		};
+		CBDF17C8264D95DD00E5786A /* ServiceLayerTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17C4264D953400E5786A /* PhotoCacheTest */,
+				CBDF17C2264D94E800E5786A /* NetworkServiceTest */,
+				CBDF17BF264D946B00E5786A /* CoreDataTest */,
+			);
+			path = ServiceLayerTest;
+			sourceTree = "<group>";
+		};
+		CBDF17D5264DA08E00E5786A /* AppDelegateTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF17D6264DA09F00E5786A /* AppDelegateTest.swift */,
+			);
+			path = AppDelegateTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,7 +664,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAD25C2264AA8140016955D /* CinemaMVVMTests.swift in Sources */,
+				CBDF17BD264D8F5500E5786A /* CoreDataTest.swift in Sources */,
+				CBDF17CA264D962000E5786A /* NetworkServiceTest.swift in Sources */,
+				CBDF17D2264D9E6A00E5786A /* MainModuleTest.swift in Sources */,
+				CBDF17B9264D8A6500E5786A /* CoordinatorTest.swift in Sources */,
+				CBDF17D4264D9E7600E5786A /* DetailModuleTest.swift in Sources */,
+				CBDF17D7264DA09F00E5786A /* AppDelegateTest.swift in Sources */,
+				CBDF17CE264D995B00E5786A /* ReloadableTest.swift in Sources */,
+				CBDF17BB264D8C9C00E5786A /* AssemblyBuilderTest.swift in Sources */,
+				CBDF17CC264D991900E5786A /* PhotoCacheTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

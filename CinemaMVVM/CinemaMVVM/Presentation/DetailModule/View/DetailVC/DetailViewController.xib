@@ -21,12 +21,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1Vx-At-ePv">
-                    <rect key="frame" x="0.0" y="0.0" width="390" height="498"/>
+                    <rect key="frame" x="0.0" y="44" width="390" height="454"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="4Oi-1s-ndW"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="498" id="8W1-QD-UaY"/>
-                        <constraint firstAttribute="height" constant="498" id="Mnt-Lv-67n"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="454" id="8W1-QD-UaY"/>
+                        <constraint firstAttribute="height" constant="454" id="Mnt-Lv-67n"/>
                         <constraint firstAttribute="width" constant="390" id="wKT-Jt-6fm"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SPE-xa-EZV">
@@ -72,11 +72,11 @@
                 <constraint firstItem="5an-uM-Bgx" firstAttribute="top" secondItem="1Vx-At-ePv" secondAttribute="bottom" constant="19" id="UZ9-ve-6tw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Vx-At-ePv" secondAttribute="trailing" id="WEI-s6-c47"/>
                 <constraint firstItem="DAk-Kw-YUw" firstAttribute="top" secondItem="5an-uM-Bgx" secondAttribute="bottom" constant="8" id="gkJ-mQ-aSV"/>
-                <constraint firstItem="1Vx-At-ePv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hFs-Oc-IgO"/>
+                <constraint firstItem="1Vx-At-ePv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="hFs-Oc-IgO"/>
                 <constraint firstItem="DAk-Kw-YUw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="l3N-rT-ny2"/>
                 <constraint firstItem="5an-uM-Bgx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="mY0-nz-DPk"/>
                 <constraint firstItem="1Vx-At-ePv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rIj-2i-eya"/>
-                <constraint firstItem="1Vx-At-ePv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-44" id="wba-P9-ezy"/>
+                <constraint firstItem="1Vx-At-ePv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wba-P9-ezy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DAk-Kw-YUw" secondAttribute="trailing" constant="8" id="xPa-Hg-B7L"/>
             </constraints>
             <point key="canvasLocation" x="233.84615384615384" y="148.5781990521327"/>
