@@ -9,16 +9,16 @@
 import XCTest
 
 final class AssemblyBuilderTest: XCTestCase {
-    private var assemblyBuilder: AssemblyBuilderProtocol?
+    private var assemblyBuilder: BuilderProtocol?
     private var coordinator: CoordinatorProtocol!
-    private var cinemaModel: CinemaModel?
+    private var cinemaModel: CinemaListEntity?
     private var navController = UINavigationController()
 
     func testAssemblyBuilder() {
-        cinemaModel = CinemaModel(posterPath: "Big", originalTitle: "big", overview: "big", voteAverage: 1)
+        cinemaModel = CinemaListEntity(posterPath: "Big", originalTitle: "big", overview: "big", voteAverage: 1)
 
         let mainVC = assemblyBuilder?.createDetailModule(
-            cinema: cinemaModel ?? CinemaModel(posterPath: "", originalTitle: "", overview: "", voteAverage: 0),
+            cinema: cinemaModel ?? CinemaListEntity(posterPath: "", originalTitle: "", overview: "", voteAverage: 0),
             coordinator: coordinator
         )
         let detailVC = assemblyBuilder?.createMainModule(coordinator: coordinator)
@@ -27,7 +27,7 @@ final class AssemblyBuilderTest: XCTestCase {
         XCTAssert(mainVC == detailVC)
         XCTAssert(assemblyBuilder?.createMainModule(coordinator: coordinator) == nil)
         XCTAssert(assemblyBuilder?.createDetailModule(
-            cinema: cinemaModel ?? CinemaModel(posterPath: "", originalTitle: "", overview: "", voteAverage: 0),
+            cinema: cinemaModel ?? CinemaListEntity(posterPath: "", originalTitle: "", overview: "", voteAverage: 0),
             coordinator: coordinator
         ) == nil)
     }

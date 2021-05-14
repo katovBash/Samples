@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 extension MainTableCell: ConfigureCellProtocol {
-    func setCellUI(model: CinemaModel?, photoService: PhotoService?, indexPath: IndexPath) {
+    func setCellUI(model: CinemaListEntity?, photoService: PhotoService?, indexPath: IndexPath) {
         cinemaNameLabel.text = model?.title
         descriptionCinemaLabel.text = model?.overview
         cinemaRaitingLabel.text = "\(model?.voteAverage ?? Double())"
 
         guard let unwrappedPosterPath = model?.posterPath else { return }
-        let imageString = "\(InternetDataHelper.BeginningImageURL)\(unwrappedPosterPath)"
+        let imageString = "\(ServiceData.BeginningImageURL)\(unwrappedPosterPath)"
         cinemaImageView.image = photoService?.savePhotoAssync(at: indexPath, by: imageString)
     }
 }

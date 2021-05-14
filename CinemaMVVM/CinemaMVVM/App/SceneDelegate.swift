@@ -22,7 +22,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
 
         let navigationVC = UINavigationController()
-        let assemblyBuilder = AssemblyBuilder()
+        let assemblyBuilder = Builder()
         coordinator = Coordinator(navigationController: navigationVC, assemblyBuilder: assemblyBuilder)
         coordinator?.startMain()
 

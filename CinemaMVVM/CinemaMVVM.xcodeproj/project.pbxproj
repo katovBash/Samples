@@ -14,30 +14,30 @@
 		CBAD25B4264AA8140016955D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25B3264AA8140016955D /* Assets.xcassets */; };
 		CBAD25B7264AA8140016955D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */; };
 		CBAD25CD264AA8140016955D /* CinemaMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */; };
-		CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DA264AA89F0016955D /* CinemaModel.swift */; };
+		CBAD25DB264AA89F0016955D /* CinemaListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25DA264AA89F0016955D /* CinemaListEntity.swift */; };
 		CBAD25E7264AAA930016955D /* MainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25E5264AAA930016955D /* MainTableVC.swift */; };
 		CBAD25E8264AAA930016955D /* MainTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25E6264AAA930016955D /* MainTableVC.xib */; };
 		CBAD25ED264AAAF80016955D /* MainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25EB264AAAF80016955D /* MainTableCell.swift */; };
 		CBAD25EE264AAAF80016955D /* MainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25EC264AAAF80016955D /* MainTableCell.xib */; };
 		CBAD25F4264AAB8E0016955D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25F3264AAB8E0016955D /* MainViewModel.swift */; };
-		CBAD25F7264AAC050016955D /* CinemaImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25F6264AAC050016955D /* CinemaImageModel.swift */; };
+		CBAD25F7264AAC050016955D /* CinemaListImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25F6264AAC050016955D /* CinemaListImageEntity.swift */; };
 		CBAD25FE264AAC5E0016955D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25FC264AAC5E0016955D /* DetailViewController.swift */; };
 		CBAD2602264AAC8C0016955D /* DetailCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2600264AAC8C0016955D /* DetailCollectionCell.swift */; };
 		CBAD2603264AAC8C0016955D /* DetailCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAD2601264AAC8C0016955D /* DetailCollectionCell.xib */; };
 		CBAD2606264AACDF0016955D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2605264AACDF0016955D /* DetailViewModel.swift */; };
 		CBAD260C264AAD440016955D /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD260B264AAD440016955D /* PhotoService.swift */; };
 		CBAD260E264AAD5E0016955D /* DataReloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD260D264AAD5E0016955D /* DataReloadable.swift */; };
-		CBAD2612264AAD960016955D /* InternetDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2611264AAD960016955D /* InternetDataHelper.swift */; };
+		CBAD2612264AAD960016955D /* ServiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2611264AAD960016955D /* ServiceData.swift */; };
 		CBAD2617264AAE4E0016955D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2616264AAE4E0016955D /* NetworkService.swift */; };
 		CBAD2619264AAEB70016955D /* ErrorNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2618264AAEB70016955D /* ErrorNetworkService.swift */; };
 		CBAD261E264ABFCE0016955D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD261D264ABFCE0016955D /* Coordinator.swift */; };
-		CBAD2629264AD3F90016955D /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */; };
+		CBAD2629264AD3F90016955D /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2628264AD3F90016955D /* Builder.swift */; };
 		CBCA835E264E7B7C006FAEA1 /* Extension + DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA835D264E7B7C006FAEA1 /* Extension + DetailVC.swift */; };
 		CBCA8361264E7BE3006FAEA1 /* DetailCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8360264E7BE3006FAEA1 /* DetailCell + Extension.swift */; };
 		CBCA8364264E7C91006FAEA1 /* MainCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8363264E7C91006FAEA1 /* MainCell + Extension.swift */; };
 		CBCA8367264E7CED006FAEA1 /* MainTableVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */; };
 		CBD35888264C3E39007C9F96 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD35887264C3E39007C9F96 /* DetailViewController.xib */; };
-		CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */; };
+		CBD3588A264C57F2007C9F96 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD35889264C57F2007C9F96 /* CoreDataService.swift */; };
 		CBDF17B9264D8A6500E5786A /* CoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */; };
 		CBDF17BB264D8C9C00E5786A /* AssemblyBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17BA264D8C9C00E5786A /* AssemblyBuilderTest.swift */; };
 		CBDF17BD264D8F5500E5786A /* CoreDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17BC264D8F5500E5786A /* CoreDataTest.swift */; };
@@ -80,30 +80,30 @@
 		CBAD25C8264AA8140016955D /* CinemaMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAD25CC264AA8140016955D /* CinemaMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaMVVMUITests.swift; sourceTree = "<group>"; };
 		CBAD25CE264AA8140016955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBAD25DA264AA89F0016955D /* CinemaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaModel.swift; sourceTree = "<group>"; };
+		CBAD25DA264AA89F0016955D /* CinemaListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaListEntity.swift; sourceTree = "<group>"; };
 		CBAD25E5264AAA930016955D /* MainTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableVC.swift; sourceTree = "<group>"; };
 		CBAD25E6264AAA930016955D /* MainTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableVC.xib; sourceTree = "<group>"; };
 		CBAD25EB264AAAF80016955D /* MainTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCell.swift; sourceTree = "<group>"; };
 		CBAD25EC264AAAF80016955D /* MainTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableCell.xib; sourceTree = "<group>"; };
 		CBAD25F3264AAB8E0016955D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		CBAD25F6264AAC050016955D /* CinemaImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaImageModel.swift; sourceTree = "<group>"; };
+		CBAD25F6264AAC050016955D /* CinemaListImageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaListImageEntity.swift; sourceTree = "<group>"; };
 		CBAD25FC264AAC5E0016955D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CBAD2600264AAC8C0016955D /* DetailCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionCell.swift; sourceTree = "<group>"; };
 		CBAD2601264AAC8C0016955D /* DetailCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCollectionCell.xib; sourceTree = "<group>"; };
 		CBAD2605264AACDF0016955D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		CBAD260B264AAD440016955D /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		CBAD260D264AAD5E0016955D /* DataReloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReloadable.swift; sourceTree = "<group>"; };
-		CBAD2611264AAD960016955D /* InternetDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDataHelper.swift; sourceTree = "<group>"; };
+		CBAD2611264AAD960016955D /* ServiceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceData.swift; sourceTree = "<group>"; };
 		CBAD2616264AAE4E0016955D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CBAD2618264AAEB70016955D /* ErrorNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetworkService.swift; sourceTree = "<group>"; };
 		CBAD261D264ABFCE0016955D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		CBAD2628264AD3F90016955D /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		CBCA835D264E7B7C006FAEA1 /* Extension + DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + DetailVC.swift"; sourceTree = "<group>"; };
 		CBCA8360264E7BE3006FAEA1 /* DetailCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailCell + Extension.swift"; sourceTree = "<group>"; };
 		CBCA8363264E7C91006FAEA1 /* MainCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCell + Extension.swift"; sourceTree = "<group>"; };
 		CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTableVC + Extension.swift"; sourceTree = "<group>"; };
 		CBD35887264C3E39007C9F96 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		CBD35889264C57F2007C9F96 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTest.swift; sourceTree = "<group>"; };
 		CBDF17BA264D8C9C00E5786A /* AssemblyBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderTest.swift; sourceTree = "<group>"; };
 		CBDF17BC264D8F5500E5786A /* CoreDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTest.swift; sourceTree = "<group>"; };
@@ -140,6 +140,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB8109E0264EE9D800F95C64 /* CoreDaraService */ = {
+			isa = PBXGroup;
+			children = (
+				CBD35889264C57F2007C9F96 /* CoreDataService.swift */,
+			);
+			path = CoreDaraService;
+			sourceTree = "<group>";
+		};
+		CB8109E1264EE9E500F95C64 /* CoreDataEntity */ = {
+			isa = PBXGroup;
+			children = (
+				CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */,
+			);
+			path = CoreDataEntity;
+			sourceTree = "<group>";
+		};
 		CBAD259B264AA8130016955D = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +181,7 @@
 			children = (
 				CBAD25B8264AA8140016955D /* Info.plist */,
 				CBAD2608264AAD0B0016955D /* App */,
-				CBAD2627264AD3E20016955D /* AssemblyBuilder */,
+				CBAD2627264AD3E20016955D /* Builder */,
 				CBAD261C264ABF670016955D /* Coordinator */,
 				CBAD2607264AAD000016955D /* Presentation */,
 				CBAD2609264AAD1C0016955D /* ServiceLayer */,
@@ -237,7 +253,7 @@
 		CBAD25F1264AAB530016955D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD25DA264AA89F0016955D /* CinemaModel.swift */,
+				CBAD25DA264AA89F0016955D /* CinemaListEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,7 +279,7 @@
 		CBAD25F8264AAC0E0016955D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD25F6264AAC050016955D /* CinemaImageModel.swift */,
+				CBAD25F6264AAC050016955D /* CinemaListImageEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,7 +344,6 @@
 			children = (
 				CBAD2614264AADEB0016955D /* Network */,
 				CBAD2615264AAE000016955D /* CoreData */,
-				CBDF17BE264D8FC200E5786A /* PhotoCache */,
 				CBAD2613264AADBB0016955D /* ServiceView */,
 			);
 			path = ServiceLayer;
@@ -352,12 +367,12 @@
 			path = ServiceNetwork;
 			sourceTree = "<group>";
 		};
-		CBAD2610264AAD7F0016955D /* HelperData */ = {
+		CBAD2610264AAD7F0016955D /* ServiceData */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD2611264AAD960016955D /* InternetDataHelper.swift */,
+				CBAD2611264AAD960016955D /* ServiceData.swift */,
 			);
-			path = HelperData;
+			path = ServiceData;
 			sourceTree = "<group>";
 		};
 		CBAD2613264AADBB0016955D /* ServiceView */ = {
@@ -373,8 +388,9 @@
 		CBAD2614264AADEB0016955D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CBAD260A264AAD2C0016955D /* ServicePhoto */,
 				CBAD260F264AAD700016955D /* ServiceNetwork */,
-				CBAD2610264AAD7F0016955D /* HelperData */,
+				CBAD2610264AAD7F0016955D /* ServiceData */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -382,8 +398,8 @@
 		CBAD2615264AAE000016955D /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */,
-				CBAD25B0264AA8130016955D /* CinemaMVVM.xcdatamodeld */,
+				CB8109E0264EE9D800F95C64 /* CoreDaraService */,
+				CB8109E1264EE9E500F95C64 /* CoreDataEntity */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -396,12 +412,12 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		CBAD2627264AD3E20016955D /* AssemblyBuilder */ = {
+		CBAD2627264AD3E20016955D /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */,
+				CBAD2628264AD3F90016955D /* Builder.swift */,
 			);
-			path = AssemblyBuilder;
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		CBCA835F264E7B9D006FAEA1 /* Extension + DetailVC */ = {
@@ -442,14 +458,6 @@
 				CBCA835D264E7B7C006FAEA1 /* Extension + DetailVC.swift */,
 			);
 			path = "Extension Delegate";
-			sourceTree = "<group>";
-		};
-		CBDF17BE264D8FC200E5786A /* PhotoCache */ = {
-			isa = PBXGroup;
-			children = (
-				CBAD260A264AAD2C0016955D /* ServicePhoto */,
-			);
-			path = PhotoCache;
 			sourceTree = "<group>";
 		};
 		CBDF17BF264D946B00E5786A /* CoreDataTest */ = {
@@ -722,25 +730,25 @@
 				CBAD25FE264AAC5E0016955D /* DetailViewController.swift in Sources */,
 				CBAD260E264AAD5E0016955D /* DataReloadable.swift in Sources */,
 				CBAD25A8264AA8130016955D /* AppDelegate.swift in Sources */,
-				CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */,
-				CBAD2629264AD3F90016955D /* AssemblyBuilder.swift in Sources */,
+				CBD3588A264C57F2007C9F96 /* CoreDataService.swift in Sources */,
+				CBAD2629264AD3F90016955D /* Builder.swift in Sources */,
 				CBAD25B2264AA8130016955D /* CinemaMVVM.xcdatamodeld in Sources */,
 				CBAD2602264AAC8C0016955D /* DetailCollectionCell.swift in Sources */,
-				CBAD25F7264AAC050016955D /* CinemaImageModel.swift in Sources */,
+				CBAD25F7264AAC050016955D /* CinemaListImageEntity.swift in Sources */,
 				CBAD25ED264AAAF80016955D /* MainTableCell.swift in Sources */,
 				CBCA835E264E7B7C006FAEA1 /* Extension + DetailVC.swift in Sources */,
 				CBAD261E264ABFCE0016955D /* Coordinator.swift in Sources */,
 				CBCA8361264E7BE3006FAEA1 /* DetailCell + Extension.swift in Sources */,
 				CBCA8364264E7C91006FAEA1 /* MainCell + Extension.swift in Sources */,
 				CBAD25AA264AA8130016955D /* SceneDelegate.swift in Sources */,
-				CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */,
+				CBAD25DB264AA89F0016955D /* CinemaListEntity.swift in Sources */,
 				CBAD2619264AAEB70016955D /* ErrorNetworkService.swift in Sources */,
 				CBCA8367264E7CED006FAEA1 /* MainTableVC + Extension.swift in Sources */,
 				CBAD260C264AAD440016955D /* PhotoService.swift in Sources */,
 				CBAD2617264AAE4E0016955D /* NetworkService.swift in Sources */,
 				CBAD25E7264AAA930016955D /* MainTableVC.swift in Sources */,
 				CBAD2606264AACDF0016955D /* DetailViewModel.swift in Sources */,
-				CBAD2612264AAD960016955D /* InternetDataHelper.swift in Sources */,
+				CBAD2612264AAD960016955D /* ServiceData.swift in Sources */,
 				CBAD25F4264AAB8E0016955D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

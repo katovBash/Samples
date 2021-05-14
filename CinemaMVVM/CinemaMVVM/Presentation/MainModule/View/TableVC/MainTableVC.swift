@@ -8,7 +8,6 @@
 import UIKit
 
 final class MainTableVC: UITableViewController {
-    var coordinator: CoordinatorProtocol?
     var viewModel: MainViewModelProtocol?
     var photoService: PhotoService?
     var movieIDClosure: ((Int) -> ())?

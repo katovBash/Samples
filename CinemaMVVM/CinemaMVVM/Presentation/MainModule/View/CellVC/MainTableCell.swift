@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ConfigureCellProtocol {
-    func setCellUI(model: CinemaModel?, photoService: PhotoService?, indexPath: IndexPath)
+    func setCellUI(model: CinemaListEntity?, photoService: PhotoService?, indexPath: IndexPath)
 }
 
 final class MainTableCell: UITableViewCell {

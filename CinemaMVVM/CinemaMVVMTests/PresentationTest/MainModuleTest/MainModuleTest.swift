@@ -16,7 +16,7 @@ final class MainModuleTest: XCTestCase {
 
     func testMainViewModel() {
         let navigationController = UINavigationController()
-        let assemblyBuilder = AssemblyBuilder()
+        let assemblyBuilder = Builder()
         coordinator = Coordinator(navigationController: navigationController, assemblyBuilder: assemblyBuilder)
 
         networkService = NetworkService()

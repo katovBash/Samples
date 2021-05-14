@@ -9,18 +9,18 @@ import CoreData
 import Foundation
 import UIKit
 
-protocol CoreDataProviderProtocol {
+protocol CoreDataServiceProtocol {
     func deleteObjectsFromCoreData(context: NSManagedObjectContext)
-    func saveDateToCoreDate(movies: [CinemaModel], context: NSManagedObjectContext)
-    func getInfoCoreData(model: CinemaListModel)
+    func saveDateToCoreDate(movies: [CinemaListEntity], context: NSManagedObjectContext)
+    func getInfoCoreData(model: CinemaEntity)
 }
 
-final class CoreDataProvider: CoreDataProviderProtocol {
-    static let shareInstance = CoreDataProvider()
+final class CoreDataService: CoreDataServiceProtocol {
+    static let shareInstance = CoreDataService()
     private let container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
     private let fetchRequest = NSFetchRequest<MovieCoreData>(entityName: "MovieCoreData")
 
-    func saveData(movie: [CinemaModel]) {
+    func saveData(movie: [CinemaListEntity]) {
         container?.performBackgroundTask { context in
             self.deleteObjectsFromCoreData(context: context)
             self.saveDateToCoreDate(movies: movie, context: context)
@@ -37,7 +37,7 @@ final class CoreDataProvider: CoreDataProviderProtocol {
         }
     }
 
-    func saveDateToCoreDate(movies: [CinemaModel], context: NSManagedObjectContext) {
+    func saveDateToCoreDate(movies: [CinemaListEntity], context: NSManagedObjectContext) {
         context.perform {
             for movie in movies {
                 let movieEntity = MovieCoreData(context: context)
@@ -55,14 +55,14 @@ final class CoreDataProvider: CoreDataProviderProtocol {
         }
     }
 
-    func getInfoCoreData(model: CinemaListModel) {
+    func getInfoCoreData(model: CinemaEntity) {
         DispatchQueue.main.async {
             if let context = self.container?.viewContext {
                 let request: NSFetchRequest<MovieCoreData> = MovieCoreData.fetchRequest()
                 request.sortDescriptors = [NSSortDescriptor(key: #keyPath(MovieCoreData.rate), ascending: false)]
                 let data = try? context.fetch(request)
-                let result = data?.compactMap { movie -> CinemaModel in
-                    let movieEntity = CinemaModel(
+                let result = data?.compactMap { movie -> CinemaListEntity in
+                    let movieEntity = CinemaListEntity(
                         posterPath: movie.posterImage ?? String(),
                         originalTitle: movie.title ?? String(),
                         overview: movie.overView ?? String(),

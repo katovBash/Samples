@@ -35,7 +35,7 @@ extension MainTableVC {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cinemaSelected = viewModel?.cinemaModelList?.results?[indexPath.row] else { return }
         movieIDClosure?(cinemaSelected.id ?? Int())
-        coordinator?.startDetail(model: cinemaSelected)
+        viewModel?.coordinator?.startDetail(model: cinemaSelected)
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

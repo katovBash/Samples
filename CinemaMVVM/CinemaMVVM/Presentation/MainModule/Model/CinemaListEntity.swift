@@ -6,11 +6,11 @@
 //
 import Foundation
 
-final class CinemaListModel: Decodable {
-    var results: [CinemaModel]?
+final class CinemaEntity: Decodable {
+    var results: [CinemaListEntity]?
 }
 
-final class CinemaModel: Decodable {
+final class CinemaListEntity: Decodable {
     enum CodingKeys: String, CodingKey {
         case title = "original_title"
         case posterPath = "poster_path"

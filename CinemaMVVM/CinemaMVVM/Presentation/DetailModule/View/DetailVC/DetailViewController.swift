@@ -12,9 +12,8 @@ final class DetailViewController: UIViewController {
     @IBOutlet var textView: UITextView!
     @IBOutlet var titleLabel: UILabel!
 
-    var coordinator: CoordinatorProtocol?
     var detailViewModel: DetailViewModel?
-    var cinemaModel: CinemaModel?
+    var cinemaModel: CinemaListEntity?
     var photoService: PhotoService?
     private var movieID: Int?
 

@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 extension DetailCollectionCell: ConfigureDetailCellProtocol {
-    func setCellUI(model: CinemaImageModel?, photoService: PhotoService?, indexPath: IndexPath) {
+    func setCellUI(model: CinemaListImageEntity?, photoService: PhotoService?, indexPath: IndexPath) {
         guard let unwrappedPosterPath = model?.filePath else { return }
-        let imageString = "\(InternetDataHelper.BeginningImageURL)\(unwrappedPosterPath)"
+        let imageString = "\(ServiceData.BeginningImageURL)\(unwrappedPosterPath)"
         cinemaImageView.image = photoService?.savePhotoToFileManager(at: indexPath, by: imageString)
     }
 }

@@ -7,12 +7,12 @@
 
 import Foundation
 
-final class CinemaListImageModel: Decodable {
-    var backdrops: [CinemaImageModel]
+final class CinemaImageEntity: Decodable {
+    var backdrops: [CinemaListImageEntity]
     var id: Int?
 }
 
-final class CinemaImageModel: Decodable {
+final class CinemaListImageEntity: Decodable {
     enum CodingKeys: String, CodingKey {
         case filePath = "file_path"
     }

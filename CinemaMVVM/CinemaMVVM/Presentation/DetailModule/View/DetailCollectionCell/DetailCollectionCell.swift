@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ConfigureDetailCellProtocol {
-    func setCellUI(model: CinemaImageModel?, photoService: PhotoService?, indexPath: IndexPath)
+    func setCellUI(model: CinemaListImageEntity?, photoService: PhotoService?, indexPath: IndexPath)
 }
 
 final class DetailCollectionCell: UICollectionViewCell {

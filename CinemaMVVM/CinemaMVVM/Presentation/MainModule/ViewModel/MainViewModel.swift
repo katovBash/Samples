@@ -10,17 +10,18 @@ import Foundation
 import UIKit
 
 protocol MainViewModelProtocol: AnyObject {
-    var cinemaModelList: CinemaListModel? { get set }
+    var coordinator: CoordinatorProtocol? { get set }
+    var cinemaModelList: CinemaEntity? { get set }
     var updateViewData: (() -> ())? { get set }
     func getCinema()
 }
 
 final class MainViewModel: MainViewModelProtocol {
     private var networkService: NetworkServiceProtocol?
-    private var coreDataProvider = CoreDataProvider()
-    private var coordinator: CoordinatorProtocol?
-    var cinemaModelList: CinemaListModel?
-    var cinemaModel: CinemaModel?
+    private var coreDataProvider = CoreDataService()
+    var coordinator: CoordinatorProtocol?
+    var cinemaModelList: CinemaEntity?
+    var cinemaModel: CinemaListEntity?
     var updateViewData: (() -> ())?
 
     required init(netWorkService: NetworkServiceProtocol, coordinator: CoordinatorProtocol) {

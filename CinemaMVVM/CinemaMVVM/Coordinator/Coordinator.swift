@@ -13,15 +13,15 @@ protocol CoordinatorProtocol: AnyObject {
     var navigationController: UINavigationController? { get set }
 
     func startMain()
-    func startDetail(model: CinemaModel)
+    func startDetail(model: CinemaListEntity)
 }
 
 final class Coordinator: NSObject, CoordinatorProtocol {
     var childCoordinator: [CoordinatorProtocol] = []
     var navigationController: UINavigationController?
-    var assemblyBuilder: AssemblyBuilder?
+    var assemblyBuilder: Builder?
 
-    init(navigationController: UINavigationController, assemblyBuilder: AssemblyBuilder) {
+    init(navigationController: UINavigationController, assemblyBuilder: Builder) {
         self.navigationController = navigationController
         self.assemblyBuilder = assemblyBuilder
     }
@@ -33,7 +33,7 @@ final class Coordinator: NSObject, CoordinatorProtocol {
         }
     }
 
-    func startDetail(model: CinemaModel) {
+    func startDetail(model: CinemaListEntity) {
         if let navigationController = navigationController {
             guard let detailVC = assemblyBuilder?.createDetailModule(cinema: model, coordinator: self) else { return }
             navigationController.pushViewController(detailVC, animated: true)

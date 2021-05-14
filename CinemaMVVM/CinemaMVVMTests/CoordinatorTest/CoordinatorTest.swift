@@ -10,12 +10,12 @@ import XCTest
 
 final class CoordinatorTest: XCTestCase {
     private var coordinator: CoordinatorProtocol?
-    private var cinemaModel: CinemaModel?
+    private var cinemaModel: CinemaListEntity?
 
     func testCoordinator() {
-        cinemaModel = CinemaModel(posterPath: "Big", originalTitle: "Big", overview: "Big", voteAverage: 10)
+        cinemaModel = CinemaListEntity(posterPath: "Big", originalTitle: "Big", overview: "Big", voteAverage: 10)
         coordinator?.startMain()
-        coordinator?.startDetail(model: cinemaModel ?? CinemaModel(
+        coordinator?.startDetail(model: cinemaModel ?? CinemaListEntity(
             posterPath: "",
             originalTitle: "",
             overview: "",

@@ -9,11 +9,11 @@
 import XCTest
 
 final class NetworkServiceTest: XCTestCase {
-    private var cinemaModelList = CinemaListModel()
-    private var coreDataProvider = CoreDataProvider()
+    private var cinemaModelList = CinemaEntity()
+    private var coreDataProvider = CoreDataService()
     private var networkServiceTest: NetworkServiceProtocol?
     private var updateViewData: (() -> ())?
-    private var cinemaModel: CinemaListImageModel?
+    private var cinemaModel: CinemaImageEntity?
 
     func testNetworkServiceGetFilms() {
         networkServiceTest?.getListFilms { [weak self] result in

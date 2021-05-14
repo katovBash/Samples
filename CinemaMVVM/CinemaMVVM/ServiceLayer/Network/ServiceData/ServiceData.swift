@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class InternetDataHelper {
+final class ServiceData {
     static var https = "https://"
     static var apiKey = "api_key=4f23e57050ee96edaca62644d3f1efff"
     static var BeginningImageURL = "\(https)image.tmdb.org/t/p/w500"

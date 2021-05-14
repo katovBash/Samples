@@ -8,29 +8,29 @@
 import Foundation
 import UIKit
 
-protocol AssemblyBuilderProtocol {
+protocol BuilderProtocol {
     func createMainModule(coordinator: CoordinatorProtocol) -> UITableViewController
-    func createDetailModule(cinema: CinemaModel, coordinator: CoordinatorProtocol) -> UIViewController
+    func createDetailModule(cinema: CinemaListEntity, coordinator: CoordinatorProtocol) -> UIViewController
 }
 
 // MARK: Initialise elements in project
 
-final class AssemblyBuilder: AssemblyBuilderProtocol {
+final class Builder: BuilderProtocol {
     func createMainModule(coordinator: CoordinatorProtocol) -> UITableViewController {
         let mainView = MainTableVC()
         let networkService = NetworkService()
         let mainViewModel = MainViewModel(netWorkService: networkService, coordinator: coordinator)
         mainView.viewModel = mainViewModel
-        mainView.coordinator = coordinator
+        mainViewModel.coordinator = coordinator
         return mainView
     }
 
-    func createDetailModule(cinema: CinemaModel, coordinator: CoordinatorProtocol) -> UIViewController {
+    func createDetailModule(cinema: CinemaListEntity, coordinator: CoordinatorProtocol) -> UIViewController {
         let detailView = DetailViewController()
         let networkService = NetworkService()
         let detailViewModel = DetailViewModel(networkService: networkService, coordinator: coordinator, model: cinema)
         detailView.detailViewModel = detailViewModel
-        detailView.coordinator = coordinator
+        detailViewModel.coordinator = coordinator
         return detailView
     }
 }

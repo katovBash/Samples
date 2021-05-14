@@ -9,18 +9,19 @@ import Foundation
 
 protocol DetailViewModelProtocol: AnyObject {
     var updateViewData: (() -> ())? { get set }
-    var cinemaModel: CinemaModel? { get set }
+    var cinemaModel: CinemaListEntity? { get set }
+    var coordinator: CoordinatorProtocol? { get set }
     func getCinema(movieID: Int)
 }
 
 final class DetailViewModel: DetailViewModelProtocol {
     var updateViewData: (() -> ())?
-    var cinemaModel: CinemaModel?
-    var cinemaModelList: CinemaListImageModel?
+    var cinemaModel: CinemaListEntity?
+    var cinemaModelList: CinemaImageEntity?
+    var coordinator: CoordinatorProtocol?
     private var networkService: NetworkServiceProtocol?
-    private var coordinator: CoordinatorProtocol?
 
-    required init(networkService: NetworkServiceProtocol, coordinator: CoordinatorProtocol, model: CinemaModel?) {
+    required init(networkService: NetworkServiceProtocol, coordinator: CoordinatorProtocol, model: CinemaListEntity?) {
         self.networkService = networkService
         self.coordinator = coordinator
         cinemaModel = model
