@@ -13,7 +13,7 @@ extension DetailViewController: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        detailViewModel.cinemaModel?.backdrops.count ?? Int()
+        detailViewModel?.cinemaModelList?.backdrops.count ?? Int()
     }
 
     func collectionView(
@@ -27,7 +27,7 @@ extension DetailViewController: UICollectionViewDataSource {
         else { return UICollectionViewCell() }
 
         cell.setCellUI(
-            model: detailViewModel.cinemaModel?.backdrops[indexPath.row],
+            model: detailViewModel?.cinemaModelList?.backdrops[indexPath.row],
             photoService: photoService,
             indexPath: indexPath
         )

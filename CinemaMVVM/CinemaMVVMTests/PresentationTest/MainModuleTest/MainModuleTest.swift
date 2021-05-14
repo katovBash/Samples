@@ -9,10 +9,18 @@
 import XCTest
 
 final class MainModuleTest: XCTestCase {
-    private var viewModelProtocol: MainViewModelProtocol?
-    private var viewModel = MainViewModel()
+    private var viewModelProtocol: MainViewModelProtocol!
+    private var networkService: NetworkServiceProtocol!
+    private var coordinator: Coordinator!
+    private var viewModel: MainViewModel!
 
     func testMainViewModel() {
+        let navigationController = UINavigationController()
+        let assemblyBuilder = AssemblyBuilder()
+        coordinator = Coordinator(navigationController: navigationController, assemblyBuilder: assemblyBuilder)
+
+        networkService = NetworkService()
+        viewModel = MainViewModel(netWorkService: networkService, coordinator: coordinator)
         viewModelProtocol?.getCinema()
         XCTAssert(viewModelProtocol?.getCinema() == nil)
     }

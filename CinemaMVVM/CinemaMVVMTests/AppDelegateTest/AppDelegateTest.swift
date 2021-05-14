@@ -31,6 +31,7 @@ final class AppDelegateTest: XCTestCase {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+            XCTAssert(context.hasChanges)
         }
     }
 }

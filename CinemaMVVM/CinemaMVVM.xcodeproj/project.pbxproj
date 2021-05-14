@@ -36,7 +36,6 @@
 		CBCA8361264E7BE3006FAEA1 /* DetailCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8360264E7BE3006FAEA1 /* DetailCell + Extension.swift */; };
 		CBCA8364264E7C91006FAEA1 /* MainCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8363264E7C91006FAEA1 /* MainCell + Extension.swift */; };
 		CBCA8367264E7CED006FAEA1 /* MainTableVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */; };
-		CBCA836A264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8369264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift */; };
 		CBD35888264C3E39007C9F96 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD35887264C3E39007C9F96 /* DetailViewController.xib */; };
 		CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */; };
 		CBDF17B9264D8A6500E5786A /* CoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */; };
@@ -103,7 +102,6 @@
 		CBCA8360264E7BE3006FAEA1 /* DetailCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailCell + Extension.swift"; sourceTree = "<group>"; };
 		CBCA8363264E7C91006FAEA1 /* MainCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCell + Extension.swift"; sourceTree = "<group>"; };
 		CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTableVC + Extension.swift"; sourceTree = "<group>"; };
-		CBCA8369264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + DetailVC + Override.swift"; sourceTree = "<group>"; };
 		CBD35887264C3E39007C9F96 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTest.swift; sourceTree = "<group>"; };
@@ -410,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				CBCA836C264E7DE6006FAEA1 /* Extension Delegate */,
-				CBCA836B264E7DD5006FAEA1 /* Extension LifeCycle */,
 			);
 			path = "Extension + DetailVC";
 			sourceTree = "<group>";
@@ -437,14 +434,6 @@
 				CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */,
 			);
 			path = "Extension + MainTableVC";
-			sourceTree = "<group>";
-		};
-		CBCA836B264E7DD5006FAEA1 /* Extension LifeCycle */ = {
-			isa = PBXGroup;
-			children = (
-				CBCA8369264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift */,
-			);
-			path = "Extension LifeCycle";
 			sourceTree = "<group>";
 		};
 		CBCA836C264E7DE6006FAEA1 /* Extension Delegate */ = {
@@ -753,7 +742,6 @@
 				CBAD2606264AACDF0016955D /* DetailViewModel.swift in Sources */,
 				CBAD2612264AAD960016955D /* InternetDataHelper.swift in Sources */,
 				CBAD25F4264AAB8E0016955D /* MainViewModel.swift in Sources */,
-				CBCA836A264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

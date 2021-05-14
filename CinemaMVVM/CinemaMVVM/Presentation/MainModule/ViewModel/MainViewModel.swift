@@ -16,14 +16,20 @@ protocol MainViewModelProtocol: AnyObject {
 }
 
 final class MainViewModel: MainViewModelProtocol {
-    private var networkService = NetworkService()
+    private var networkService: NetworkServiceProtocol?
     private var coreDataProvider = CoreDataProvider()
+    private var coordinator: CoordinatorProtocol?
     var cinemaModelList: CinemaListModel?
     var cinemaModel: CinemaModel?
     var updateViewData: (() -> ())?
 
+    required init(netWorkService: NetworkServiceProtocol, coordinator: CoordinatorProtocol) {
+        networkService = netWorkService
+        self.coordinator = coordinator
+    }
+
     func getCinema() {
-        networkService.getListFilms { [weak self] result in
+        networkService?.getListFilms { [weak self] result in
             guard let self = self else { return }
 
             DispatchQueue.main.async {

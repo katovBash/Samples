@@ -73,6 +73,8 @@ final class PhotoService {
         return image
     }
 
+    // MARK: For second view
+
     private func loadPhoto(at indexPath: IndexPath, by urlString: String) {
         guard let resourceURL = URL(string: urlString) else { return }
 
@@ -103,6 +105,38 @@ final class PhotoService {
             return photo
         } else {
             loadPhoto(at: indexPath, by: urlString)
+        }
+        return nil
+    }
+
+    // MARK: For the first view
+
+    private func loadPhotoAssync(at indexPath: IndexPath, by urlString: String) {
+        guard let resourceURL = URL(string: urlString) else { return }
+
+        URLSession.shared.dataTask(with: resourceURL) { data, _, _ in
+
+            guard let data = data else { return }
+            guard let image = UIImage(data: data) else { return }
+
+            DispatchQueue.global().async {
+                self.images[urlString] = image
+                self.saveImageToCache(urlString: urlString, image: image)
+
+                DispatchQueue.main.async {
+                    self.container.reloadRow(at: indexPath)
+                }
+            }
+        }.resume()
+    }
+
+    func savePhotoAssync(at indexPath: IndexPath, by urlString: String) -> UIImage? {
+        if let photo = images[urlString] {
+            return photo
+        } else if let photo = getImageFromCache(urlString: urlString) {
+            return photo
+        } else {
+            loadPhotoAssync(at: indexPath, by: urlString)
         }
         return nil
     }

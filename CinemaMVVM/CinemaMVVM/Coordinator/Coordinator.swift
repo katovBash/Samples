@@ -10,30 +10,33 @@ import UIKit
 
 protocol CoordinatorProtocol: AnyObject {
     var childCoordinator: [CoordinatorProtocol] { get set }
-    var navigationController: UINavigationController { get set }
+    var navigationController: UINavigationController? { get set }
 
     func startMain()
     func startDetail(model: CinemaModel)
 }
 
-final class MainCoordinator: NSObject, CoordinatorProtocol {
+final class Coordinator: NSObject, CoordinatorProtocol {
     var childCoordinator: [CoordinatorProtocol] = []
-    var navigationController: UINavigationController
+    var navigationController: UINavigationController?
+    var assemblyBuilder: AssemblyBuilder?
 
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, assemblyBuilder: AssemblyBuilder) {
         self.navigationController = navigationController
+        self.assemblyBuilder = assemblyBuilder
     }
 
     func startMain() {
-        let mainVC = MainTableVC()
-        mainVC.coordinator = self
-        navigationController.pushViewController(mainVC, animated: true)
+        if let navigationController = navigationController {
+            guard let mainVC = assemblyBuilder?.createMainModule(coordinator: self) else { return }
+            navigationController.viewControllers = [mainVC]
+        }
     }
 
     func startDetail(model: CinemaModel) {
-        let detailVC = DetailViewController()
-        detailVC.coordinator = self
-        detailVC.cinemaModel = model
-        navigationController.pushViewController(detailVC, animated: true)
+        if let navigationController = navigationController {
+            guard let detailVC = assemblyBuilder?.createDetailModule(cinema: model, coordinator: self) else { return }
+            navigationController.pushViewController(detailVC, animated: true)
+        }
     }
 }

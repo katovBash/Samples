@@ -18,15 +18,19 @@ protocol AssemblyBuilderProtocol {
 final class AssemblyBuilder: AssemblyBuilderProtocol {
     func createMainModule(coordinator: CoordinatorProtocol) -> UITableViewController {
         let mainView = MainTableVC()
-        let mainViewModel = MainViewModel()
+        let networkService = NetworkService()
+        let mainViewModel = MainViewModel(netWorkService: networkService, coordinator: coordinator)
         mainView.viewModel = mainViewModel
+        mainView.coordinator = coordinator
         return mainView
     }
 
     func createDetailModule(cinema: CinemaModel, coordinator: CoordinatorProtocol) -> UIViewController {
         let detailView = DetailViewController()
-        let detailViewModel = DetailViewModel()
+        let networkService = NetworkService()
+        let detailViewModel = DetailViewModel(networkService: networkService, coordinator: coordinator, model: cinema)
         detailView.detailViewModel = detailViewModel
+        detailView.coordinator = coordinator
         return detailView
     }
 }

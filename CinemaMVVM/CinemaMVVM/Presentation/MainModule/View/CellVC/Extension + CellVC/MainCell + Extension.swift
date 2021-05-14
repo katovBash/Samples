@@ -16,6 +16,6 @@ extension MainTableCell: ConfigureCellProtocol {
 
         guard let unwrappedPosterPath = model?.posterPath else { return }
         let imageString = "\(InternetDataHelper.BeginningImageURL)\(unwrappedPosterPath)"
-        cinemaImageView.image = photoService?.savePhotoToFileManager(at: indexPath, by: imageString)
+        cinemaImageView.image = photoService?.savePhotoAssync(at: indexPath, by: imageString)
     }
 }

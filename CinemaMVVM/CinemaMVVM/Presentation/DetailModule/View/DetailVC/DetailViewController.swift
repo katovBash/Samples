@@ -12,9 +12,8 @@ final class DetailViewController: UIViewController {
     @IBOutlet var textView: UITextView!
     @IBOutlet var titleLabel: UILabel!
 
-    var detailViewModel = DetailViewModel()
     var coordinator: CoordinatorProtocol?
-
+    var detailViewModel: DetailViewModel?
     var cinemaModel: CinemaModel?
     var photoService: PhotoService?
     private var movieID: Int?
@@ -26,24 +25,24 @@ final class DetailViewController: UIViewController {
             DetailCollectionCell.nib(),
             forCellWithReuseIdentifier: DetailCollectionCell.CellID
         )
+        navigationItem.hidesBackButton = false
 
         photoService = PhotoService(container: collectionView)
-        detailViewModel = DetailViewModel()
 
         setUP()
-        detailViewModel.getCinema(movieID: movieID ?? Int())
+        detailViewModel?.getCinema(movieID: movieID ?? Int())
         updateData()
     }
 
     func setUP() {
-        guard let model = cinemaModel else { return }
+        guard let model = detailViewModel?.cinemaModel else { return }
         movieID = model.id
         textView.text = model.overview
         titleLabel.text = model.title
     }
 
     func updateData() {
-        detailViewModel.updateViewData = { [weak self] in
+        detailViewModel?.updateViewData = { [weak self] in
             self?.collectionView.reloadData()
         }
     }

@@ -14,6 +14,10 @@ final class CoreDataTest: XCTestCase {
     private var cinemaListModel: CinemaListModel?
     private var cinemaModel: [CinemaModel]?
 
+    override func setUp() {
+        coreData = CoreDataProvider.shareInstance
+    }
+
     func testCoreData() {
         cinemaModel = [CinemaModel(posterPath: "big", originalTitle: "big", overview: "big", voteAverage: 1)]
 
@@ -30,11 +34,11 @@ final class CoreDataTest: XCTestCase {
 
         XCTAssert(container != nil)
         XCTAssert(cinemaModel?.count == 1)
-        XCTAssert(coreData?.deleteObjectsFromCoreData(context: context) == nil)
-        XCTAssert(coreData?.getInfoCoreData(model: cinemaListModel ?? CinemaListModel()) == nil)
+        XCTAssert(coreData?.deleteObjectsFromCoreData(context: context) != nil)
+        XCTAssert(coreData?.getInfoCoreData(model: cinemaListModel ?? CinemaListModel()) != nil)
         XCTAssert(coreData?.saveDateToCoreDate(
             movies: cinemaModel ?? [CinemaModel(posterPath: "", originalTitle: "", overview: "", voteAverage: 0)],
             context: context
-        ) == nil)
+        ) != nil)
     }
 }
