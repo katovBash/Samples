@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB754557264AFCEA00971459 /* Extension + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754556264AFCEA00971459 /* Extension + Alert.swift */; };
 		CBAD25A8264AA8130016955D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25A7264AA8130016955D /* AppDelegate.swift */; };
 		CBAD25AA264AA8130016955D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD25A9264AA8130016955D /* SceneDelegate.swift */; };
 		CBAD25AF264AA8130016955D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD25AD264AA8130016955D /* Main.storyboard */; };
@@ -33,6 +32,11 @@
 		CBAD2619264AAEB70016955D /* ErrorNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2618264AAEB70016955D /* ErrorNetworkService.swift */; };
 		CBAD261E264ABFCE0016955D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD261D264ABFCE0016955D /* Coordinator.swift */; };
 		CBAD2629264AD3F90016955D /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */; };
+		CBCA835E264E7B7C006FAEA1 /* Extension + DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA835D264E7B7C006FAEA1 /* Extension + DetailVC.swift */; };
+		CBCA8361264E7BE3006FAEA1 /* DetailCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8360264E7BE3006FAEA1 /* DetailCell + Extension.swift */; };
+		CBCA8364264E7C91006FAEA1 /* MainCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8363264E7C91006FAEA1 /* MainCell + Extension.swift */; };
+		CBCA8367264E7CED006FAEA1 /* MainTableVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */; };
+		CBCA836A264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA8369264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift */; };
 		CBD35888264C3E39007C9F96 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD35887264C3E39007C9F96 /* DetailViewController.xib */; };
 		CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */; };
 		CBDF17B9264D8A6500E5786A /* CoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */; };
@@ -64,7 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB754556264AFCEA00971459 /* Extension + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Alert.swift"; sourceTree = "<group>"; };
 		CBAD25A4264AA8130016955D /* CinemaMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAD25A7264AA8130016955D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAD25A9264AA8130016955D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +99,11 @@
 		CBAD2618264AAEB70016955D /* ErrorNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetworkService.swift; sourceTree = "<group>"; };
 		CBAD261D264ABFCE0016955D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		CBCA835D264E7B7C006FAEA1 /* Extension + DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + DetailVC.swift"; sourceTree = "<group>"; };
+		CBCA8360264E7BE3006FAEA1 /* DetailCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailCell + Extension.swift"; sourceTree = "<group>"; };
+		CBCA8363264E7C91006FAEA1 /* MainCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCell + Extension.swift"; sourceTree = "<group>"; };
+		CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTableVC + Extension.swift"; sourceTree = "<group>"; };
+		CBCA8369264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + DetailVC + Override.swift"; sourceTree = "<group>"; };
 		CBD35887264C3E39007C9F96 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CBD35889264C57F2007C9F96 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		CBDF17B8264D8A6500E5786A /* CoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTest.swift; sourceTree = "<group>"; };
@@ -134,14 +142,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB754558264B0AB600971459 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CB754556264AFCEA00971459 /* Extension + Alert.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		CBAD259B264AA8130016955D = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +200,9 @@
 		CBAD25E9264AAABB0016955D /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD25F2264AAB730016955D /* ViewModel */,
 				CBAD25F1264AAB530016955D /* Model */,
 				CBAD25F0264AAB430016955D /* View */,
+				CBAD25F2264AAB730016955D /* ViewModel */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -212,6 +212,7 @@
 			children = (
 				CBAD25E5264AAA930016955D /* MainTableVC.swift */,
 				CBAD25E6264AAA930016955D /* MainTableVC.xib */,
+				CBCA8368264E7D3F006FAEA1 /* Extension + MainTableVC */,
 			);
 			path = TableVC;
 			sourceTree = "<group>";
@@ -221,6 +222,7 @@
 			children = (
 				CBAD25EB264AAAF80016955D /* MainTableCell.swift */,
 				CBAD25EC264AAAF80016955D /* MainTableCell.xib */,
+				CBCA8365264E7C95006FAEA1 /* Extension + CellVC */,
 			);
 			path = CellVC;
 			sourceTree = "<group>";
@@ -253,9 +255,9 @@
 		CBAD25F5264AABDC0016955D /* DetailModule */ = {
 			isa = PBXGroup;
 			children = (
-				CBAD2604264AACC40016955D /* ViewModel */,
-				CBAD25F9264AAC210016955D /* View */,
 				CBAD25F8264AAC0E0016955D /* Model */,
+				CBAD25F9264AAC210016955D /* View */,
+				CBAD2604264AACC40016955D /* ViewModel */,
 			);
 			path = DetailModule;
 			sourceTree = "<group>";
@@ -282,6 +284,7 @@
 			children = (
 				CBAD25FC264AAC5E0016955D /* DetailViewController.swift */,
 				CBD35887264C3E39007C9F96 /* DetailViewController.xib */,
+				CBCA835F264E7B9D006FAEA1 /* Extension + DetailVC */,
 			);
 			path = DetailVC;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			children = (
 				CBAD2600264AAC8C0016955D /* DetailCollectionCell.swift */,
 				CBAD2601264AAC8C0016955D /* DetailCollectionCell.xib */,
+				CBCA8362264E7BE7006FAEA1 /* ExtensionCell */,
 			);
 			path = DetailCollectionCell;
 			sourceTree = "<group>";
@@ -361,9 +365,8 @@
 		CBAD2613264AADBB0016955D /* ServiceView */ = {
 			isa = PBXGroup;
 			children = (
-				CB754558264B0AB600971459 /* Extensions */,
-				CBAD25AD264AA8130016955D /* Main.storyboard */,
 				CBAD25B3264AA8140016955D /* Assets.xcassets */,
+				CBAD25AD264AA8130016955D /* Main.storyboard */,
 				CBAD25B5264AA8140016955D /* LaunchScreen.storyboard */,
 			);
 			path = ServiceView;
@@ -401,6 +404,55 @@
 				CBAD2628264AD3F90016955D /* AssemblyBuilder.swift */,
 			);
 			path = AssemblyBuilder;
+			sourceTree = "<group>";
+		};
+		CBCA835F264E7B9D006FAEA1 /* Extension + DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA836C264E7DE6006FAEA1 /* Extension Delegate */,
+				CBCA836B264E7DD5006FAEA1 /* Extension LifeCycle */,
+			);
+			path = "Extension + DetailVC";
+			sourceTree = "<group>";
+		};
+		CBCA8362264E7BE7006FAEA1 /* ExtensionCell */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA8360264E7BE3006FAEA1 /* DetailCell + Extension.swift */,
+			);
+			path = ExtensionCell;
+			sourceTree = "<group>";
+		};
+		CBCA8365264E7C95006FAEA1 /* Extension + CellVC */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA8363264E7C91006FAEA1 /* MainCell + Extension.swift */,
+			);
+			path = "Extension + CellVC";
+			sourceTree = "<group>";
+		};
+		CBCA8368264E7D3F006FAEA1 /* Extension + MainTableVC */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA8366264E7CED006FAEA1 /* MainTableVC + Extension.swift */,
+			);
+			path = "Extension + MainTableVC";
+			sourceTree = "<group>";
+		};
+		CBCA836B264E7DD5006FAEA1 /* Extension LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA8369264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift */,
+			);
+			path = "Extension LifeCycle";
+			sourceTree = "<group>";
+		};
+		CBCA836C264E7DE6006FAEA1 /* Extension Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA835D264E7B7C006FAEA1 /* Extension + DetailVC.swift */,
+			);
+			path = "Extension Delegate";
 			sourceTree = "<group>";
 		};
 		CBDF17BE264D8FC200E5786A /* PhotoCache */ = {
@@ -684,20 +736,24 @@
 				CBD3588A264C57F2007C9F96 /* CoreDataProvider.swift in Sources */,
 				CBAD2629264AD3F90016955D /* AssemblyBuilder.swift in Sources */,
 				CBAD25B2264AA8130016955D /* CinemaMVVM.xcdatamodeld in Sources */,
-				CB754557264AFCEA00971459 /* Extension + Alert.swift in Sources */,
 				CBAD2602264AAC8C0016955D /* DetailCollectionCell.swift in Sources */,
 				CBAD25F7264AAC050016955D /* CinemaImageModel.swift in Sources */,
 				CBAD25ED264AAAF80016955D /* MainTableCell.swift in Sources */,
+				CBCA835E264E7B7C006FAEA1 /* Extension + DetailVC.swift in Sources */,
 				CBAD261E264ABFCE0016955D /* Coordinator.swift in Sources */,
+				CBCA8361264E7BE3006FAEA1 /* DetailCell + Extension.swift in Sources */,
+				CBCA8364264E7C91006FAEA1 /* MainCell + Extension.swift in Sources */,
 				CBAD25AA264AA8130016955D /* SceneDelegate.swift in Sources */,
 				CBAD25DB264AA89F0016955D /* CinemaModel.swift in Sources */,
 				CBAD2619264AAEB70016955D /* ErrorNetworkService.swift in Sources */,
+				CBCA8367264E7CED006FAEA1 /* MainTableVC + Extension.swift in Sources */,
 				CBAD260C264AAD440016955D /* PhotoService.swift in Sources */,
 				CBAD2617264AAE4E0016955D /* NetworkService.swift in Sources */,
 				CBAD25E7264AAA930016955D /* MainTableVC.swift in Sources */,
 				CBAD2606264AACDF0016955D /* DetailViewModel.swift in Sources */,
 				CBAD2612264AAD960016955D /* InternetDataHelper.swift in Sources */,
 				CBAD25F4264AAB8E0016955D /* MainViewModel.swift in Sources */,
+				CBCA836A264E7DB0006FAEA1 /* Extension + DetailVC + Override.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

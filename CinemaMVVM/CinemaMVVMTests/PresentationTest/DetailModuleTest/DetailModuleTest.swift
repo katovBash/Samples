@@ -9,7 +9,7 @@
 import XCTest
 
 final class DetailModuleTest: XCTestCase {
-    var detailProtocol: DetailViewModelProtocol?
+    private var detailProtocol: DetailViewModelProtocol?
 
     func testDetailModel() {
         detailProtocol?.getCinema(movieID: 22)

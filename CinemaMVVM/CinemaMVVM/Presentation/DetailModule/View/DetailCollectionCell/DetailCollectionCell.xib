@@ -10,37 +10,29 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailCollectionCell" id="1ex-cj-cj6" customClass="DetailCollectionCell" customModule="CinemaMVVM" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="365" height="650"/>
+            <rect key="frame" x="0.0" y="0.0" width="365" height="720"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="365" height="650"/>
+                <rect key="frame" x="0.0" y="0.0" width="365" height="720"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="03v-U7-Ufo">
-                        <rect key="frame" x="151" y="318" width="63" height="63"/>
-                    </activityIndicatorView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8vy-1p-UQS">
-                        <rect key="frame" x="0.0" y="0.0" width="365" height="650"/>
+                        <rect key="frame" x="0.0" y="0.0" width="365" height="720"/>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="azN-ty-oRl"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="03v-U7-Ufo" secondAttribute="trailing" constant="151" id="5eW-6y-NqK"/>
                 <constraint firstItem="8vy-1p-UQS" firstAttribute="top" secondItem="1ex-cj-cj6" secondAttribute="top" id="NCH-23-HTg"/>
                 <constraint firstItem="8vy-1p-UQS" firstAttribute="leading" secondItem="1ex-cj-cj6" secondAttribute="leading" id="ap8-ft-rrP"/>
-                <constraint firstAttribute="bottom" secondItem="03v-U7-Ufo" secondAttribute="bottom" constant="269" id="f2J-S0-WVb"/>
-                <constraint firstItem="03v-U7-Ufo" firstAttribute="leading" secondItem="1ex-cj-cj6" secondAttribute="leading" constant="151" id="i64-aZ-TPf"/>
                 <constraint firstAttribute="bottom" secondItem="8vy-1p-UQS" secondAttribute="bottom" id="ikr-9D-qHp"/>
                 <constraint firstAttribute="trailing" secondItem="8vy-1p-UQS" secondAttribute="trailing" id="me8-F7-jhS"/>
-                <constraint firstItem="03v-U7-Ufo" firstAttribute="top" secondItem="1ex-cj-cj6" secondAttribute="top" constant="318" id="mm9-Ud-wf8"/>
             </constraints>
-            <size key="customSize" width="391" height="714"/>
+            <size key="customSize" width="391" height="784"/>
             <connections>
-                <outlet property="activityIndicator" destination="03v-U7-Ufo" id="0ce-zZ-z4h"/>
                 <outlet property="cinemaImageView" destination="8vy-1p-UQS" id="JfX-Kh-C8l"/>
             </connections>
-            <point key="canvasLocation" x="113.768115942029" y="278.57142857142856"/>
+            <point key="canvasLocation" x="113.768115942029" y="255.13392857142856"/>
         </collectionViewCell>
     </objects>
 </document>

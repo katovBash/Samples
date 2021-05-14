@@ -10,13 +10,9 @@ import CoreData
 import XCTest
 
 final class CoreDataTest: XCTestCase {
-    var coreData: CoreDataProviderProtocol?
-    var cinemaListModel: CinemaListModel?
-    var cinemaModel: [CinemaModel]?
-
-    override func setUpWithError() throws {}
-
-    override func tearDownWithError() throws {}
+    private var coreData: CoreDataProviderProtocol?
+    private var cinemaListModel: CinemaListModel?
+    private var cinemaModel: [CinemaModel]?
 
     func testCoreData() {
         cinemaModel = [CinemaModel(posterPath: "big", originalTitle: "big", overview: "big", voteAverage: 1)]

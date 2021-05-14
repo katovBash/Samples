@@ -9,16 +9,8 @@
 import XCTest
 
 final class CoordinatorTest: XCTestCase {
-    var coordinator: CoordinatorProtocol?
-    var cinemaModel: CinemaModel?
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    private var coordinator: CoordinatorProtocol?
+    private var cinemaModel: CinemaModel?
 
     func testCoordinator() {
         cinemaModel = CinemaModel(posterPath: "Big", originalTitle: "Big", overview: "Big", voteAverage: 10)

@@ -17,7 +17,6 @@ protocol CoreDataProviderProtocol {
 
 final class CoreDataProvider: CoreDataProviderProtocol {
     static let shareInstance = CoreDataProvider()
-
     private let container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
     private let fetchRequest = NSFetchRequest<MovieCoreData>(entityName: "MovieCoreData")
 

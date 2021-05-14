@@ -14,29 +14,13 @@ protocol ConfigureDetailCellProtocol {
 final class DetailCollectionCell: UICollectionViewCell {
     static let CellID = "DetailCollectionCell"
 
-    @IBOutlet private var cinemaImageView: UIImageView!
-    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var cinemaImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        activityIndicator.startAnimating()
     }
 
     static func nib() -> UINib {
         UINib(nibName: CellID, bundle: nil)
-    }
-}
-
-extension DetailCollectionCell: ConfigureDetailCellProtocol {
-    func setCellUI(model: CinemaImageModel?, photoService: PhotoService?, indexPath: IndexPath) {
-        guard let unwrappedPosterPath = model?.filePath else { return }
-        let imageString = "\(InternetDataHelper.BeginningImageURL)\(unwrappedPosterPath)"
-
-        DispatchQueue.main.async {
-            self.activityIndicator.stopAnimating()
-            self.activityIndicator.hidesWhenStopped = true
-        }
-
-        cinemaImageView.image = photoService?.savePhotoToFileManager(at: indexPath, by: imageString)
     }
 }

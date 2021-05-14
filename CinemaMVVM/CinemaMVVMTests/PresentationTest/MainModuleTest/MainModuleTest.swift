@@ -9,8 +9,8 @@
 import XCTest
 
 final class MainModuleTest: XCTestCase {
-    var viewModelProtocol: MainViewModelProtocol?
-    var viewModel = MainViewModel()
+    private var viewModelProtocol: MainViewModelProtocol?
+    private var viewModel = MainViewModel()
 
     func testMainViewModel() {
         viewModelProtocol?.getCinema()

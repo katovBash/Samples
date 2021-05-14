@@ -15,7 +15,6 @@ protocol DetailViewModelProtocol: AnyObject {
 
 final class DetailViewModel: DetailViewModelProtocol {
     var updateViewData: (() -> ())?
-
     var cinemaModel: CinemaListImageModel?
     private var networkService = NetworkService()
 

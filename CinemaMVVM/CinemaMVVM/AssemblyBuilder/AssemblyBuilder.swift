@@ -17,16 +17,16 @@ protocol AssemblyBuilderProtocol {
 
 final class AssemblyBuilder: AssemblyBuilderProtocol {
     func createMainModule(coordinator: CoordinatorProtocol) -> UITableViewController {
-        let view = MainTableVC()
+        let mainView = MainTableVC()
         let mainViewModel = MainViewModel()
-        view.viewModel = mainViewModel
-        return view
+        mainView.viewModel = mainViewModel
+        return mainView
     }
 
     func createDetailModule(cinema: CinemaModel, coordinator: CoordinatorProtocol) -> UIViewController {
-        let view = DetailViewController()
+        let detailView = DetailViewController()
         let detailViewModel = DetailViewModel()
-        view.detailViewModel = detailViewModel
-        return view
+        detailView.detailViewModel = detailViewModel
+        return detailView
     }
 }

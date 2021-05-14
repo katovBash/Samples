@@ -5,19 +5,12 @@
 //  Created by Nick Bashkatov on 11.05.2021.
 //
 import Foundation
-/// Films
+
 final class CinemaListModel: Decodable {
     var results: [CinemaModel]?
 }
 
-/// MovieModel
-class CinemaModel: Decodable {
-    var posterPath: String?
-    var title: String?
-    var overview: String?
-    var voteAverage: Double?
-    var id: Int?
-
+final class CinemaModel: Decodable {
     enum CodingKeys: String, CodingKey {
         case title = "original_title"
         case posterPath = "poster_path"
@@ -25,6 +18,12 @@ class CinemaModel: Decodable {
         case id
         case overview
     }
+
+    var posterPath: String?
+    var title: String?
+    var overview: String?
+    var voteAverage: Double?
+    var id: Int?
 
     init(
         posterPath: String,

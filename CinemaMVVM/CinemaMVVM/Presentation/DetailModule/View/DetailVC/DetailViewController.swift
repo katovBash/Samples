@@ -10,16 +10,18 @@ import UIKit
 final class DetailViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var textView: UITextView!
+    @IBOutlet var titleLabel: UILabel!
 
     var detailViewModel = DetailViewModel()
     var coordinator: CoordinatorProtocol?
 
     var cinemaModel: CinemaModel?
-    private var photoService: PhotoService?
+    var photoService: PhotoService?
     private var movieID: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         collectionView.register(
             DetailCollectionCell.nib(),
             forCellWithReuseIdentifier: DetailCollectionCell.CellID
@@ -37,57 +39,12 @@ final class DetailViewController: UIViewController {
         guard let model = cinemaModel else { return }
         movieID = model.id
         textView.text = model.overview
-        title = model.title
+        titleLabel.text = model.title
     }
 
     func updateData() {
         detailViewModel.updateViewData = { [weak self] in
             self?.collectionView.reloadData()
         }
-    }
-}
-
-extension DetailViewController: UICollectionViewDataSource {
-    func collectionView(
-        _ collectionView: UICollectionView,
-        numberOfItemsInSection section: Int
-    ) -> Int {
-        detailViewModel.cinemaModel?.backdrops.count ?? Int()
-    }
-
-    func collectionView(
-        _ collectionView: UICollectionView,
-        cellForItemAt indexPath: IndexPath
-    ) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: DetailCollectionCell.CellID,
-            for: indexPath
-        ) as? DetailCollectionCell
-        else { return UICollectionViewCell() }
-
-        cell.setCellUI(
-            model: detailViewModel.cinemaModel?.backdrops[indexPath.row],
-            photoService: photoService,
-            indexPath: indexPath
-        )
-        return cell
-    }
-}
-
-extension DetailViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAt indexPath: IndexPath
-    ) -> CGSize {
-        CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-    }
-
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        minimumLineSpacingForSectionAt section: Int
-    ) -> CGFloat {
-        0
     }
 }
