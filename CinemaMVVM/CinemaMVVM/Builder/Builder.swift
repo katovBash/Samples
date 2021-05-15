@@ -19,6 +19,7 @@ final class Builder: BuilderProtocol {
     func createMainModule(coordinator: CoordinatorProtocol) -> UITableViewController {
         let mainView = MainTableVC()
         let networkService = NetworkService()
+
         let mainViewModel = MainViewModel(netWorkService: networkService, coordinator: coordinator)
         mainView.viewModel = mainViewModel
         mainViewModel.coordinator = coordinator
@@ -28,6 +29,7 @@ final class Builder: BuilderProtocol {
     func createDetailModule(cinema: CinemaListEntity, coordinator: CoordinatorProtocol) -> UIViewController {
         let detailView = DetailViewController()
         let networkService = NetworkService()
+
         let detailViewModel = DetailViewModel(networkService: networkService, coordinator: coordinator, model: cinema)
         detailView.detailViewModel = detailViewModel
         detailViewModel.coordinator = coordinator

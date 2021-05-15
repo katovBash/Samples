@@ -184,7 +184,7 @@
 				CBAD2627264AD3E20016955D /* Builder */,
 				CBAD261C264ABF670016955D /* Coordinator */,
 				CBAD2607264AAD000016955D /* Presentation */,
-				CBAD2609264AAD1C0016955D /* ServiceLayer */,
+				CBAD2609264AAD1C0016955D /* Service */,
 			);
 			path = CinemaMVVM;
 			sourceTree = "<group>";
@@ -339,14 +339,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		CBAD2609264AAD1C0016955D /* ServiceLayer */ = {
+		CBAD2609264AAD1C0016955D /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				CBAD2614264AADEB0016955D /* Network */,
 				CBAD2615264AAE000016955D /* CoreData */,
 				CBAD2613264AADBB0016955D /* ServiceView */,
 			);
-			path = ServiceLayer;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CBAD260A264AAD2C0016955D /* ServicePhoto */ = {

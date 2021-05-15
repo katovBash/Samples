@@ -12,7 +12,7 @@ extension MainTableCell: ConfigureCellProtocol {
     func setCellUI(model: CinemaListEntity?, photoService: PhotoService?, indexPath: IndexPath) {
         cinemaNameLabel.text = model?.title
         descriptionCinemaLabel.text = model?.overview
-        cinemaRaitingLabel.text = "\(model?.voteAverage ?? Double())"
+        cinemaRatingLabel.text = "\(model?.voteAverage ?? Double())"
 
         guard let unwrappedPosterPath = model?.posterPath else { return }
         let imageString = "\(ServiceData.BeginningImageURL)\(unwrappedPosterPath)"

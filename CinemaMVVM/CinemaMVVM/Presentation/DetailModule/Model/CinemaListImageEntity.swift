@@ -13,9 +13,11 @@ final class CinemaImageEntity: Decodable {
 }
 
 final class CinemaListImageEntity: Decodable {
+    var filePath: String?
+}
+
+extension CinemaListImageEntity {
     enum CodingKeys: String, CodingKey {
         case filePath = "file_path"
     }
-
-    var filePath: String?
 }

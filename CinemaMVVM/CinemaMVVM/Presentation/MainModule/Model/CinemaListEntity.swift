@@ -11,14 +11,6 @@ final class CinemaEntity: Decodable {
 }
 
 final class CinemaListEntity: Decodable {
-    enum CodingKeys: String, CodingKey {
-        case title = "original_title"
-        case posterPath = "poster_path"
-        case voteAverage = "vote_average"
-        case id
-        case overview
-    }
-
     var posterPath: String?
     var title: String?
     var overview: String?
@@ -35,5 +27,15 @@ final class CinemaListEntity: Decodable {
         title = originalTitle
         self.overview = overview
         self.voteAverage = voteAverage
+    }
+}
+
+extension CinemaListEntity {
+    enum CodingKeys: String, CodingKey {
+        case title = "original_title"
+        case posterPath = "poster_path"
+        case voteAverage = "vote_average"
+        case id
+        case overview
     }
 }

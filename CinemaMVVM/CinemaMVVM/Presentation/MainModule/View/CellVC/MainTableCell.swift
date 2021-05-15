@@ -17,7 +17,7 @@ final class MainTableCell: UITableViewCell {
     @IBOutlet var cinemaImageView: UIImageView!
     @IBOutlet var cinemaNameLabel: UILabel!
     @IBOutlet var descriptionCinemaLabel: UILabel!
-    @IBOutlet var cinemaRaitingLabel: UILabel!
+    @IBOutlet var cinemaRatingLabel: UILabel!
     private var photoService: PhotoService?
 
     override func awakeFromNib() {
