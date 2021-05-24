@@ -4,5 +4,5 @@
 Презентационный слой: MVVM + Coordinator.
 Стек: URLSession, GCD, CoreData.
 
-![Пример работы приложения](/screenshots/mainScreen.png)
-![Пример работы приложения](/screenshots/detailScreen.png)
+![Пример работы приложения](/screenShots/mainScreen.png)
+![Пример работы приложения](/screenShots/detailScreen.png)
