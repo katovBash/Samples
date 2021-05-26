@@ -27,7 +27,7 @@ final class CoreDataTest: XCTestCase {
 
         coreData?.deleteObjectsFromCoreData(context: context)
         coreData?.getInfoCoreData(model: cinemaListModel ?? CinemaEntity())
-        coreData?.saveDateToCoreDate(
+        coreData?.saveDataToCoreData(
             movies: cinemaModel ?? [CinemaListEntity(posterPath: "", originalTitle: "", overview: "", voteAverage: 0)],
             context: context
         )
@@ -36,7 +36,7 @@ final class CoreDataTest: XCTestCase {
         XCTAssert(cinemaModel?.count == 1)
         XCTAssert(coreData?.deleteObjectsFromCoreData(context: context) != nil)
         XCTAssert(coreData?.getInfoCoreData(model: cinemaListModel ?? CinemaEntity()) != nil)
-        XCTAssert(coreData?.saveDateToCoreDate(
+        XCTAssert(coreData?.saveDataToCoreData(
             movies: cinemaModel ?? [CinemaListEntity(posterPath: "", originalTitle: "", overview: "", voteAverage: 0)],
             context: context
         ) != nil)

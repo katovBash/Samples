@@ -111,7 +111,7 @@ final class PhotoService {
 
     // MARK: For the first view
 
-    private func loadPhotoAssync(at indexPath: IndexPath, by urlString: String) {
+    private func loadPhotoAsync(at indexPath: IndexPath, by urlString: String) {
         guard let resourceURL = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: resourceURL) { data, _, _ in
@@ -130,13 +130,13 @@ final class PhotoService {
         }.resume()
     }
 
-    func savePhotoAssync(at indexPath: IndexPath, by urlString: String) -> UIImage? {
+    func savePhotoAsync(at indexPath: IndexPath, by urlString: String) -> UIImage? {
         if let photo = images[urlString] {
             return photo
         } else if let photo = getImageFromCache(urlString: urlString) {
             return photo
         } else {
-            loadPhotoAssync(at: indexPath, by: urlString)
+            loadPhotoAsync(at: indexPath, by: urlString)
         }
         return nil
     }

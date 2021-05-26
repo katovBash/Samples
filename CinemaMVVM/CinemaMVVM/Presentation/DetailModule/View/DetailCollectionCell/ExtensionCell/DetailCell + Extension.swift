@@ -11,7 +11,7 @@ import UIKit
 extension DetailCollectionCell: ConfigureDetailCellProtocol {
     func setCellUI(model: CinemaListImageEntity?, photoService: PhotoService?, indexPath: IndexPath) {
         guard let unwrappedPosterPath = model?.filePath else { return }
-        let imageString = "\(ServiceData.BeginningImageURL)\(unwrappedPosterPath)"
+        let imageString = "\(ServiceData.beginningImageURL)\(unwrappedPosterPath)"
         cinemaImageView.image = photoService?.savePhotoToFileManager(at: indexPath, by: imageString)
     }
 }

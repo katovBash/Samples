@@ -11,19 +11,18 @@ import UIKit
 
 protocol CoreDataServiceProtocol {
     func deleteObjectsFromCoreData(context: NSManagedObjectContext)
-    func saveDateToCoreDate(movies: [CinemaListEntity], context: NSManagedObjectContext)
-    func getInfoCoreData(model: CinemaEntity)
+    func saveDataToCoreData(movies: [CinemaListEntity], context: NSManagedObjectContext)
 }
 
 final class CoreDataService: CoreDataServiceProtocol {
-    static let shareInstance = CoreDataService()
     private let container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
+
     private let fetchRequest = NSFetchRequest<MovieCoreData>(entityName: "MovieCoreData")
 
     func saveData(movie: [CinemaListEntity]) {
         container?.performBackgroundTask { context in
             self.deleteObjectsFromCoreData(context: context)
-            self.saveDateToCoreDate(movies: movie, context: context)
+            self.saveDataToCoreData(movies: movie, context: context)
         }
     }
 
@@ -37,7 +36,7 @@ final class CoreDataService: CoreDataServiceProtocol {
         }
     }
 
-    func saveDateToCoreDate(movies: [CinemaListEntity], context: NSManagedObjectContext) {
+    func saveDataToCoreData(movies: [CinemaListEntity], context: NSManagedObjectContext) {
         context.perform {
             for movie in movies {
                 let movieEntity = MovieCoreData(context: context)
@@ -50,27 +49,7 @@ final class CoreDataService: CoreDataServiceProtocol {
             do {
                 try context.save()
             } catch {
-                fatalError("\(error)")
-            }
-        }
-    }
-
-    func getInfoCoreData(model: CinemaEntity) {
-        DispatchQueue.main.async {
-            if let context = self.container?.viewContext {
-                let request: NSFetchRequest<MovieCoreData> = MovieCoreData.fetchRequest()
-                request.sortDescriptors = [NSSortDescriptor(key: #keyPath(MovieCoreData.rate), ascending: false)]
-                let data = try? context.fetch(request)
-                let result = data?.compactMap { movie -> CinemaListEntity in
-                    let movieEntity = CinemaListEntity(
-                        posterPath: movie.posterImage ?? String(),
-                        originalTitle: movie.title ?? String(),
-                        overview: movie.overView ?? String(),
-                        voteAverage: movie.rate
-                    )
-                    return movieEntity
-                }
-                model.results = result ?? []
+                print("\(error)")
             }
         }
     }

@@ -15,11 +15,18 @@ protocol NetworkServiceProtocol {
 final class NetworkService: NetworkServiceProtocol {
     // First URLSessionRequest for the first page
     func getListFilms(_ completion: @escaping (Result<CinemaEntity, ErrorService>) -> Void) {
-        let URLString = ServiceData.movieURLList
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "api.themoviedb.org"
+        urlComponents.path = "/3/movie/popular"
+        let queryItemAPIKey = URLQueryItem(name: "api_key", value: "4f23e57050ee96edaca62644d3f1efff")
+        let queryItemLanguage = URLQueryItem(name: "language", value: "ru")
+        let queryItemPage = URLQueryItem(name: "page", value: "1")
+        urlComponents.queryItems = [queryItemAPIKey, queryItemLanguage, queryItemPage]
 
-        guard let resourceURL = URL(string: URLString) else { return }
+        guard let url = urlComponents.url else { return }
 
-        URLSession.shared.dataTask(with: resourceURL) { data, _, error in
+        URLSession.shared.dataTask(with: url) { data, _, error in
             if error != nil {
                 completion(.failure(.noDataAvailable))
                 return
@@ -39,10 +46,16 @@ final class NetworkService: NetworkServiceProtocol {
 
     // Second URLSessionRequest for the second page
     func getListImageList(movieID: Int, _ completion: @escaping (Result<CinemaImageEntity, ErrorService>) -> Void) {
-        let URLString = "\(ServiceData.startImageURL)\(movieID)\(ServiceData.endImageURL)"
-        guard let resourceURL = URL(string: URLString) else { return }
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "api.themoviedb.org"
+        urlComponents.path = "/3/movie/\(movieID)/images"
+        let queryItemAPIKey = URLQueryItem(name: "api_key", value: "aca367d31340b3ecdf8975e6a8071834")
+        urlComponents.queryItems = [queryItemAPIKey]
 
-        URLSession.shared.dataTask(with: resourceURL) { data, _, error in
+        guard let url = urlComponents.url else { return }
+
+        URLSession.shared.dataTask(with: url) { data, _, error in
             if error != nil {
                 completion(.failure(.noDataAvailable))
                 return
