@@ -9,6 +9,6 @@ import Foundation
 
 final class ServiceData {
     static var https = "https://"
-    static var apiKey = "api_key=4f23e57050ee96edaca62644d3f1efff"
+    static var apiKey = "4f23e57050ee96edaca62644d3f1efff"
     static var beginningImageURL = "\(https)image.tmdb.org/t/p/w500"
 }

@@ -19,7 +19,7 @@ final class NetworkService: NetworkServiceProtocol {
         urlComponents.scheme = "https"
         urlComponents.host = "api.themoviedb.org"
         urlComponents.path = "/3/movie/popular"
-        let queryItemAPIKey = URLQueryItem(name: "api_key", value: "4f23e57050ee96edaca62644d3f1efff")
+        let queryItemAPIKey = URLQueryItem(name: "api_key", value: ServiceData.apiKey)
         let queryItemLanguage = URLQueryItem(name: "language", value: "ru")
         let queryItemPage = URLQueryItem(name: "page", value: "1")
         urlComponents.queryItems = [queryItemAPIKey, queryItemLanguage, queryItemPage]
@@ -50,7 +50,7 @@ final class NetworkService: NetworkServiceProtocol {
         urlComponents.scheme = "https"
         urlComponents.host = "api.themoviedb.org"
         urlComponents.path = "/3/movie/\(movieID)/images"
-        let queryItemAPIKey = URLQueryItem(name: "api_key", value: "aca367d31340b3ecdf8975e6a8071834")
+        let queryItemAPIKey = URLQueryItem(name: "api_key", value: ServiceData.apiKey)
         urlComponents.queryItems = [queryItemAPIKey]
 
         guard let url = urlComponents.url else { return }
