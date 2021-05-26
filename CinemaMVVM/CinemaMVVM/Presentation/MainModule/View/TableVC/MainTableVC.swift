@@ -17,7 +17,7 @@ final class MainTableVC: UITableViewController {
 
         photoService = PhotoService(container: tableView)
 
-        navigationItem.title = "MVVMCinema"
+        navigationItem.title = "Cinema"
         navigationItem.hidesBackButton = false
         navigationItem.backButtonTitle = "Back"
         tableView.register(MainTableCell.nib(), forCellReuseIdentifier: MainTableCell.idCell)
