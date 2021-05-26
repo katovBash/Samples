@@ -15,7 +15,7 @@ extension MainTableCell: ConfigureCellProtocol {
         cinemaRatingLabel.text = "\(model?.voteAverage ?? Double())"
 
         guard let unwrappedPosterPath = model?.posterPath else { return }
-        let imageString = "\(ServiceData.beginningImageURL)\(unwrappedPosterPath)"
+        let imageString = "\(ServiceData.beginURL)\(unwrappedPosterPath)"
         cinemaImageView.image = photoService?.savePhotoAsync(at: indexPath, by: imageString)
     }
 }
