@@ -11,6 +11,7 @@ protocol DetailViewModelProtocol: AnyObject {
     var updateViewData: (() -> ())? { get set }
     var cinemaModel: CinemaListEntity? { get set }
     var coordinator: CoordinatorProtocol? { get set }
+    init(networkService: NetworkServiceProtocol, coordinator: CoordinatorProtocol, model: CinemaListEntity?)
     func getCinema(movieID: Int)
 }
 

@@ -16,7 +16,7 @@ protocol CoordinatorProtocol: AnyObject {
     func startDetail(model: CinemaListEntity)
 }
 
-final class Coordinator: NSObject, CoordinatorProtocol {
+final class Coordinator: CoordinatorProtocol {
     var childCoordinator: [CoordinatorProtocol] = []
     var navigationController: UINavigationController?
     var assemblyBuilder: Builder?

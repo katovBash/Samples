@@ -22,7 +22,6 @@ final class Builder: BuilderProtocol {
 
         let mainViewModel = MainViewModel(netWorkService: networkService, coordinator: coordinator)
         mainView.viewModel = mainViewModel
-        mainViewModel.coordinator = coordinator
         return mainView
     }
 
@@ -32,7 +31,6 @@ final class Builder: BuilderProtocol {
 
         let detailViewModel = DetailViewModel(networkService: networkService, coordinator: coordinator, model: cinema)
         detailView.detailViewModel = detailViewModel
-        detailViewModel.coordinator = coordinator
         return detailView
     }
 }

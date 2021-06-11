@@ -13,6 +13,7 @@ protocol MainViewModelProtocol: AnyObject {
     var coordinator: CoordinatorProtocol? { get set }
     var cinemaModelList: CinemaEntity? { get set }
     var updateViewData: (() -> ())? { get set }
+    init(netWorkService: NetworkServiceProtocol, coordinator: CoordinatorProtocol)
     func getCinema()
 }
 
