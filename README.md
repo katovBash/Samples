@@ -1,4 +1,4 @@
-# Здесь вы можете увидеть различные примеры проектов
+# Different examples of projects
 
 # Movie
 Базовое приложение получение данных из сетевого реестра TheTMDb через Rest API. 
@@ -19,4 +19,3 @@
 ![Пример работы приложения](/screenShots/MarvelNotFound.png)
 ![Пример работы приложения](/screenShots/MarvelDetail.png)
 ![Пример работы приложения](/screenShots/MarvelComics.png)
-![Пример работы приложения](/screenShots/MarvelPagination.png)
