@@ -6,9 +6,6 @@
 Презентационный слой: MVVM + Coordinator.
 Стек: UiKit, GCD, CoreData, URLSession. 
 
-![Пример работы приложения](/screenShots/mainScreen.png)
-![Пример работы приложения](/screenShots/detailScreen.png)
-
 # Marvel
 Базовое приложение получение данных из сетевого реестра Marvel через Rest API. 
 Презентационный слой: MVVM. 
