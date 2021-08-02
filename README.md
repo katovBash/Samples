@@ -9,8 +9,7 @@
 
 # Marvel
 Базовое приложение получение данных из сетевого реестра Marvel через Rest API. 
-Презентационный слой: MVVM. 
-Стек: SwiftUI, Combine, GCD, CoreData.
+MVVM + SwiftUI + Combine.
 
 ![Пример работы приложения](/screenShots/MarvelMain.png)
 ![Пример работы приложения](/screenShots/MarvelMainFind.png)
