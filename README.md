@@ -6,6 +6,7 @@
 Презентационный слой: MVVM + Coordinator.
 Данную работу моежете увидеть далее в репозитории. 
 Стек: UiKit, GCD, CoreData, URLSession. 
+Можете увидеть в репозитории. 
 
 # Marvel
 Базовое приложение получение данных из сетевого реестра Marvel через Rest API. 
@@ -16,3 +17,11 @@ MVVM + SwiftUI + Combine.
 ![Пример работы приложения](/screenShots/MarvelNotFound.png)
 ![Пример работы приложения](/screenShots/MarvelDetail.png)
 ![Пример работы приложения](/screenShots/MarvelComics.png)
+
+# Marvel
+ARKit + SceneKit приложение. 
+![Пример работы приложения](/screenShots/ArKit1.png)
+![Пример работы приложения](/screenShots/ArKit2.png)
+![Пример работы приложения](/screenShots/ArKit3.png)
+![Пример работы приложения](/screenShots/ArKit4.png)
+![Пример работы приложения](/screenShots/ArKit5.png)
