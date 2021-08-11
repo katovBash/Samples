@@ -18,8 +18,8 @@ MVVM + SwiftUI + Combine + Crypto.
 ![Пример работы приложения](/screenShots/MarvelDetail.png)
 ![Пример работы приложения](/screenShots/MarvelComics.png)
 
-# ArKit App
-ARKit + SceneKit приложение. 
+# ShowModel App
+ARKit, SceneKit, RealityKit, SUI, MVVM. 
 ![Пример работы приложения](/screenShots/ArKit1.PNG)
 ![Пример работы приложения](/screenShots/ArKit2.PNG)
 ![Пример работы приложения](/screenShots/ArKit3.PNG)
