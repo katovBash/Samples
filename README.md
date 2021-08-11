@@ -9,8 +9,8 @@
 Стек: UiKit, GCD, CoreData, URLSession. 
 
 # Marvel
-Базовое приложение получение данных из сетевого реестра Marvel через Rest API. 
-MVVM + SwiftUI + Combine.
+Quick app получение данных из сетевого реестра Marvel через Rest API. 
+MVVM + SwiftUI + Combine + Crypto.
 
 ![Пример работы приложения](/screenShots/MarvelMain.png)
 ![Пример работы приложения](/screenShots/MarvelMainFind.png)
@@ -20,7 +20,7 @@ MVVM + SwiftUI + Combine.
 
 # ArKit App
 ARKit + SceneKit приложение. 
-![Пример работы приложения](/screenShots/ArKit1.png)
-![Пример работы приложения](/screenShots/ArKit2.png)
-![Пример работы приложения](/screenShots/ArKit3.png)
-![Пример работы приложения](/screenShots/ArKit4.png)
+![Пример работы приложения](/screenShots/ArKit1.PNG)
+![Пример работы приложения](/screenShots/ArKit2.PNG)
+![Пример работы приложения](/screenShots/ArKit3.PNG)
+![Пример работы приложения](/screenShots/ArKit4.PNG)
