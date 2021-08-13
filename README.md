@@ -2,14 +2,14 @@
 
 # Movie
 Код можете увидеть в репозитории. 
-Базовое приложение получение данных из сетевого реестра TheTMDb через Rest API. 
+Базовое приложение получение данных из TheTMDb API. 
 Кэширование всех изображений в FileManager.
 Презентационный слой: MVVM + Coordinator.
 Данную работу моежете увидеть далее в репозитории. 
 Стек: UiKit, GCD, CoreData, URLSession. 
 
 # Marvel
-Quick app получение данных из сетевого реестра Marvel через Rest API. 
+Получение данных из Marvel API. 
 MVVM + SwiftUI + Combine + Crypto.
 
 ![Пример работы приложения](/screenShots/MarvelMain.png)
