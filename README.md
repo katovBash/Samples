@@ -1,4 +1,4 @@
-# Different examples of projects
+# Basic apps
 
 # Movie
 Код можете увидеть в репозитории. 
