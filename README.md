@@ -1,12 +1,7 @@
 # Basic apps
 
 # Movie
-Код можете увидеть в репозитории. 
-Базовое приложение получение данных из TheTMDb API. 
-Кэширование всех изображений в FileManager.
-Презентационный слой: MVVM + Coordinator.
-Данную работу моежете увидеть далее в репозитории. 
-Стек: UiKit, GCD, CoreData, URLSession. 
+Код в репозитории. Получение данных из TheTMDb API. MVVM + UIKit, GCD, CoreData, URLSession. 
 
 # Marvel
 Получение данных из Marvel API. 
