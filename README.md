@@ -1,11 +1,11 @@
-# Basic apps
+# Basic samples
 
 # Movie
 Код в репозитории. Получение данных из TheTMDb API. MVVM + UIKit, GCD, CoreData, URLSession. 
 
 # Marvel
 Получение данных из Marvel API. 
-MVVM + SwiftUI + Combine + Crypto.
+MVVM + SwiftUI + Combine + CryptoKit.
 
 ![Пример работы приложения](/screenShots/MarvelMain.png)
 ![Пример работы приложения](/screenShots/MarvelMainFind.png)
